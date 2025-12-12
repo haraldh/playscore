@@ -44,7 +44,7 @@ android {
 dependencies {
     // Core
     implementation("androidx.core:core-ktx:1.17.0")
-    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.9.1")
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.10.0")
     implementation("androidx.activity:activity-compose:1.12.1")
 
     // Compose BOM
@@ -63,8 +63,8 @@ dependencies {
     implementation("androidx.navigation:navigation-compose:2.9.6")
 
     // ViewModel Compose
-    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.9.1")
-    implementation("androidx.lifecycle:lifecycle-runtime-compose:2.9.1")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.10.0")
+    implementation("androidx.lifecycle:lifecycle-runtime-compose:2.10.0")
 
     // Room
     val roomVersion = "2.8.4"
