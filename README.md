@@ -2,6 +2,10 @@
 
 A simple Android app to keep score during family & friends game evenings.
 
+## Install
+
+APKs are in the release artifacts.
+
 ## Screenshots
 
 <p align="center">
