@@ -4,7 +4,15 @@ A simple Android app to keep score during family & friends game evenings.
 
 ## Install
 
-APKs are in the release artifacts.
+To install PlayScore on your Android device:
+1. **Download the APK:**  
+   Go to the [GitHub Releases page](https://github.com/haraldh/playscore/releases) and download the latest `app-release.apk` file under "Assets".  
+   - Choose the `app-release.apk` (not `app-debug.apk`) for normal use.
+3. **Install the APK:**  
+   - On your Android device, open the downloaded APK file.  
+   - If prompted, allow installation from unknown sources.  
+   - Follow the on-screen instructions to complete installation.
+> **Note:** If you have trouble installing, see [Install APKs from unknown sources](https://www.androidcentral.com/how-install-apk-android) for more help.
 
 ## Screenshots
 
