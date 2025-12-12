@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Simple "P" letter for PlayScore -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M40,30 L40,78 L48,78 L48,58 L58,58 C67,58 74,51 74,44 C74,37 67,30 58,30 L40,30 Z M48,38 L58,38 C62,38 66,41 66,44 C66,47 62,50 58,50 L48,50 L48,38 Z" />
+</vector>
