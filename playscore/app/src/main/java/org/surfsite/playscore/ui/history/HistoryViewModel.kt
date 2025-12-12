@@ -15,7 +15,8 @@ import org.surfsite.playscore.data.repository.GameWithParticipants
 data class HistoryUiState(
     val games: List<GameWithParticipants> = emptyList(),
     val expandedGameIds: Set<Long> = emptySet(),
-    val isLoading: Boolean = true
+    val isLoading: Boolean = true,
+    val gameToDelete: GameWithParticipants? = null
 )
 
 class HistoryViewModel(
@@ -53,6 +54,22 @@ class HistoryViewModel(
                 state.expandedGameIds + gameId
             }
             state.copy(expandedGameIds = newExpanded)
+        }
+    }
+
+    fun showDeleteConfirmation(game: GameWithParticipants) {
+        _uiState.update { it.copy(gameToDelete = game) }
+    }
+
+    fun hideDeleteConfirmation() {
+        _uiState.update { it.copy(gameToDelete = null) }
+    }
+
+    fun deleteGame() {
+        val game = _uiState.value.gameToDelete ?: return
+        viewModelScope.launch {
+            gameRepository.deleteGame(game.game.id)
+            _uiState.update { it.copy(gameToDelete = null) }
         }
     }
 
