@@ -26,6 +26,9 @@ interface GameDao {
     @Query("SELECT * FROM games WHERE isActive = 0 ORDER BY endedAt DESC")
     fun getCompletedGames(): Flow<List<Game>>
 
+    @Query("DELETE FROM games WHERE id = :gameId")
+    suspend fun deleteGame(gameId: Long)
+
     // GameParticipant operations
     @Insert
     suspend fun insertParticipant(participant: GameParticipant)

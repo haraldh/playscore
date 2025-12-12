@@ -105,3 +105,4 @@ cd playscore
 - First-time setup requires accepting Android SDK licenses
 - The environment supports both x86_64 and ARM64 architectures
 - All tools are pinned to specific versions via flake.lock for reproducibility
+- This project uses release-please github actions.

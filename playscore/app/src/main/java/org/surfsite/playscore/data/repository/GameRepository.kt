@@ -50,6 +50,10 @@ class GameRepository(
 
     fun getCompletedGames(): Flow<List<Game>> = gameDao.getCompletedGames()
 
+    suspend fun deleteGame(gameId: Long) {
+        gameDao.deleteGame(gameId)
+    }
+
     suspend fun getGameWithParticipants(gameId: Long): GameWithParticipants? {
         val game = gameDao.getGameById(gameId) ?: return null
         val participants = gameDao.getParticipantsWithNamesOnce(gameId)

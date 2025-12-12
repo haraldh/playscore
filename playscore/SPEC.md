@@ -28,6 +28,7 @@ A simple Android app to keep score during family & friends game evenings.
 - Tie handling: players with equal scores share the same rank
 - Games automatically saved to history
 - History view: browse past games with dates, participants, and scores
+- Delete games from history (with confirmation)
 
 ## Technical Specifications
 

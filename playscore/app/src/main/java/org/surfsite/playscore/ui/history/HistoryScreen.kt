@@ -17,6 +17,7 @@ import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material.icons.filled.EmojiEvents
 import androidx.compose.material.icons.filled.ExpandLess
 import androidx.compose.material.icons.filled.ExpandMore
+import androidx.compose.material.icons.filled.Delete
 import androidx.compose.material.icons.filled.History
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
@@ -40,6 +41,7 @@ import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import org.surfsite.playscore.PlayScoreApplication
 import org.surfsite.playscore.data.repository.GameWithParticipants
+import org.surfsite.playscore.ui.components.ConfirmationDialog
 import org.surfsite.playscore.ui.theme.WinnerGold
 import java.text.SimpleDateFormat
 import java.util.Date
@@ -56,6 +58,16 @@ fun HistoryScreen(
     )
 ) {
     val uiState by viewModel.uiState.collectAsState()
+
+    uiState.gameToDelete?.let { game ->
+        ConfirmationDialog(
+            title = "Delete Game",
+            message = "Delete this game? This action cannot be undone.",
+            confirmText = "Delete",
+            onConfirm = { viewModel.deleteGame() },
+            onDismiss = { viewModel.hideDeleteConfirmation() }
+        )
+    }
 
     Scaffold(
         topBar = {
@@ -113,7 +125,8 @@ fun HistoryScreen(
                         GameHistoryCard(
                             game = gameWithParticipants,
                             isExpanded = gameWithParticipants.game.id in uiState.expandedGameIds,
-                            onToggleExpanded = { viewModel.toggleExpanded(gameWithParticipants.game.id) }
+                            onToggleExpanded = { viewModel.toggleExpanded(gameWithParticipants.game.id) },
+                            onDeleteClick = { viewModel.showDeleteConfirmation(gameWithParticipants) }
                         )
                     }
                 }
@@ -126,7 +139,8 @@ fun HistoryScreen(
 private fun GameHistoryCard(
     game: GameWithParticipants,
     isExpanded: Boolean,
-    onToggleExpanded: () -> Unit
+    onToggleExpanded: () -> Unit,
+    onDeleteClick: () -> Unit
 ) {
     val sortedParticipants = game.participants.sortedByDescending { it.score }
     val winner = sortedParticipants.firstOrNull()
@@ -174,6 +188,13 @@ private fun GameHistoryCard(
                         text = "${game.participants.size} players",
                         style = MaterialTheme.typography.bodySmall,
                         color = MaterialTheme.colorScheme.onSurfaceVariant
+                    )
+                }
+                IconButton(onClick = onDeleteClick) {
+                    Icon(
+                        Icons.Default.Delete,
+                        contentDescription = "Delete game",
+                        tint = MaterialTheme.colorScheme.error
                     )
                 }
                 Icon(
