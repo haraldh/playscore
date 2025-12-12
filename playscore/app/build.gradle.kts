@@ -13,8 +13,8 @@ android {
         applicationId = "org.surfsite.playscore"
         minSdk = 24
         targetSdk = 36
-        versionCode = 1
-        versionName = "1.0.0"
+        versionCode = 1 // x-release-please-major
+        versionName = "1.0.0" // x-release-please-version
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
