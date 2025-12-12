@@ -5,8 +5,10 @@
       "bump-minor-pre-major": true,
       "extra-files": [
         {
-          "type": "generic",
-          "path": "playscore/app/build.gradle.kts"
+          "type": "regex",
+          "path": "playscore/app/build.gradle.kts",
+          "regex": "versionName\\s*=\\s*\"[^\"]+\"",
+          "replacement": "versionName = \"${version}\""
         }
       ]
     }
