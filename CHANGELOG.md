@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.1](https://github.com/haraldh/playscore/compare/v1.1.0...v1.1.1) (2025-12-12)
+
+
+### Bug Fixes
+
+* add actions:write permission to release-please workflow ([#21](https://github.com/haraldh/playscore/issues/21)) ([e304b9e](https://github.com/haraldh/playscore/commit/e304b9e78baec19ef7c67c7a41bb68dfd70069eb))
+* trigger release workflow from release-please ([#19](https://github.com/haraldh/playscore/issues/19)) ([30169aa](https://github.com/haraldh/playscore/commit/30169aaf4234e9797f14b259fd1e29754c70f94c))
+
 ## [1.1.0](https://github.com/haraldh/playscore/compare/v1.0.0...v1.1.0) (2025-12-12)
 
 
