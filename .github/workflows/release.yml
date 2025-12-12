@@ -5,6 +5,11 @@ on:
     tags:
       - 'v*'
   workflow_dispatch:
+  workflow_call:
+    inputs:
+      tag_name:
+        required: true
+        type: string
 
 permissions:
   contents: write
@@ -17,6 +22,8 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v6
+      with:
+        ref: ${{ inputs.tag_name || github.ref }}
       
     - name: Set up JDK 17
       uses: actions/setup-java@v5
@@ -55,13 +62,11 @@ jobs:
         name: playscore-debug-apk
         path: playscore/app/build/outputs/apk/debug/*.apk
         
-    - name: Create Release
+    - name: Upload APKs to Release
       uses: softprops/action-gh-release@v2
-      if: startsWith(github.ref, 'refs/tags/')
+      if: startsWith(github.ref, 'refs/tags/') || inputs.tag_name
       with:
+        tag_name: ${{ inputs.tag_name || github.ref_name }}
         files: |
           playscore/app/build/outputs/apk/release/*.apk
           playscore/app/build/outputs/apk/debug/*.apk
-        generate_release_notes: true
-        draft: false
-        prerelease: false
