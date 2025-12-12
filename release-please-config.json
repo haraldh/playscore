@@ -9,6 +9,12 @@
           "path": "playscore/app/build.gradle.kts",
           "regex": "versionName\\s*=\\s*\"[^\"]+\"",
           "replacement": "versionName = \"${version}\""
+        },
+        {
+          "type": "regex",
+          "path": "playscore/app/build.gradle.kts",
+          "regex": "versionCode\\s*=\\s*\\d+",
+          "replacement": "versionCode = ${version_major}${version_minor}${version_patch}"
         }
       ]
     }
