@@ -34,8 +34,11 @@ import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.res.pluralStringResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
+import org.surfsite.playscore.R
 import kotlinx.coroutines.launch
 import org.surfsite.playscore.PlayScoreApplication
 import org.surfsite.playscore.data.local.entity.Player
@@ -60,17 +63,17 @@ fun PlayersScreen(
     Scaffold(
         topBar = {
             TopAppBar(
-                title = { Text("PlayScore") },
+                title = { Text(stringResource(R.string.players_title)) },
                 actions = {
                     IconButton(onClick = onNavigateToHistory) {
-                        Icon(Icons.Default.History, contentDescription = "History")
+                        Icon(Icons.Default.History, contentDescription = stringResource(R.string.players_history_button))
                     }
                 }
             )
         },
         floatingActionButton = {
             FloatingActionButton(onClick = { viewModel.showAddDialog() }) {
-                Icon(Icons.Default.Add, contentDescription = "Add player")
+                Icon(Icons.Default.Add, contentDescription = stringResource(R.string.players_add_player))
             }
         },
         bottomBar = {
@@ -93,9 +96,9 @@ fun PlayersScreen(
                 ) {
                     Text(
                         text = if (uiState.selectedPlayerIds.isEmpty()) {
-                            "Select players to start"
+                            stringResource(R.string.players_select_to_start)
                         } else {
-                            "Start Game (${uiState.selectedPlayerIds.size} players)"
+                            pluralStringResource(R.plurals.players_start_game, uiState.selectedPlayerIds.size, uiState.selectedPlayerIds.size)
                         }
                     )
                 }
@@ -120,11 +123,11 @@ fun PlayersScreen(
                     verticalArrangement = Arrangement.Center
                 ) {
                     Text(
-                        text = "No players yet",
+                        text = stringResource(R.string.players_empty_title),
                         style = MaterialTheme.typography.titleLarge
                     )
                     Text(
-                        text = "Tap + to add players",
+                        text = stringResource(R.string.players_empty_subtitle),
                         style = MaterialTheme.typography.bodyMedium,
                         color = MaterialTheme.colorScheme.onSurfaceVariant
                     )
@@ -156,9 +159,9 @@ fun PlayersScreen(
 
     uiState.playerToDelete?.let { player ->
         ConfirmationDialog(
-            title = "Delete Player",
-            message = "Are you sure you want to delete ${player.name}? This will also remove them from game history.",
-            confirmText = "Delete",
+            title = stringResource(R.string.delete_player_title),
+            message = stringResource(R.string.delete_player_message, player.name),
+            confirmText = stringResource(R.string.action_delete),
             onConfirm = { viewModel.deletePlayer(player) },
             onDismiss = { viewModel.hideDeleteConfirmation() }
         )
@@ -195,7 +198,7 @@ private fun PlayerRow(
             IconButton(onClick = onDelete) {
                 Icon(
                     Icons.Default.Delete,
-                    contentDescription = "Delete",
+                    contentDescription = stringResource(R.string.players_delete),
                     tint = MaterialTheme.colorScheme.error
                 )
             }

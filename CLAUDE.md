@@ -99,6 +99,34 @@ cd playscore
 - `ui/results/` - Final standings with winner
 - `ui/history/` - Past games browser
 
+**Internationalization (i18n):**
+- All user-visible strings must be in `res/values/strings.xml` (English - default)
+- Use `stringResource(R.string.xxx)` in Composables
+- For strings with parameters, use format placeholders: `%1$s` (string), `%1$d` (integer)
+- **IMPORTANT**: When adding or modifying UI text, always update ALL translation files
+
+**Supported languages:**
+| Language | Folder |
+|----------|--------|
+| English (default) | `values/` |
+| German | `values-de/` |
+| French | `values-fr/` |
+| Spanish | `values-es/` |
+| Italian | `values-it/` |
+| Portuguese | `values-pt/` |
+| Dutch | `values-nl/` |
+| Polish | `values-pl/` |
+| Swedish | `values-sv/` |
+| Danish | `values-da/` |
+| Norwegian | `values-nb/` |
+| Finnish | `values-fi/` |
+| Czech | `values-cs/` |
+| Hungarian | `values-hu/` |
+| Romanian | `values-ro/` |
+| Greek | `values-el/` |
+| Ukrainian | `values-uk/` |
+| Russian | `values-ru/` |
+
 ## Important Notes
 
 - Android Studio is available but commented out in flake.nix (uncomment `android-studio` if needed)

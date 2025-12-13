@@ -33,9 +33,12 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.res.pluralStringResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
+import org.surfsite.playscore.R
 import org.surfsite.playscore.PlayScoreApplication
 import org.surfsite.playscore.ui.theme.WinnerGold
 
@@ -57,7 +60,7 @@ fun ResultsScreen(
     Scaffold(
         topBar = {
             TopAppBar(
-                title = { Text("Results") }
+                title = { Text(stringResource(R.string.results_title)) }
             )
         }
     ) { paddingValues ->
@@ -104,7 +107,7 @@ fun ResultsScreen(
                                 onClick = onNewGame,
                                 modifier = Modifier.fillMaxWidth()
                             ) {
-                                Text("New Game")
+                                Text(stringResource(R.string.results_new_game))
                             }
                             OutlinedButton(
                                 onClick = onViewHistory,
@@ -115,7 +118,7 @@ fun ResultsScreen(
                                     contentDescription = null,
                                     modifier = Modifier.padding(end = 8.dp)
                                 )
-                                Text("View History")
+                                Text(stringResource(R.string.results_view_history))
                             }
                         }
                     }
@@ -141,13 +144,13 @@ private fun WinnerCard(winners: List<RankedPlayer>) {
         ) {
             Icon(
                 Icons.Default.EmojiEvents,
-                contentDescription = "Winner",
+                contentDescription = stringResource(R.string.results_trophy),
                 modifier = Modifier.size(48.dp),
                 tint = WinnerGold
             )
             Spacer(modifier = Modifier.height(8.dp))
             Text(
-                text = if (winners.size == 1) "Winner!" else "Winners!",
+                text = if (winners.size == 1) stringResource(R.string.results_winner) else stringResource(R.string.results_winners),
                 style = MaterialTheme.typography.titleLarge,
                 fontWeight = FontWeight.Bold
             )
@@ -160,7 +163,7 @@ private fun WinnerCard(winners: List<RankedPlayer>) {
                 )
             }
             Text(
-                text = "${winners.first().player.score} points",
+                text = pluralStringResource(R.plurals.results_points, winners.first().player.score, winners.first().player.score),
                 style = MaterialTheme.typography.titleMedium,
                 color = MaterialTheme.colorScheme.onSurfaceVariant
             )

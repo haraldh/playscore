@@ -1,0 +1,89 @@
+<resources>
+    <string name="app_name">PlayScore</string>
+
+    <!-- Players Screen -->
+    <string name="players_title">PlayScore</string>
+    <string name="players_history_button">Історія</string>
+    <string name="players_add_player">Додати гравця</string>
+    <string name="players_select_to_start">Виберіть гравців для початку</string>
+    <plurals name="players_start_game">
+        <item quantity="one">Почати (%1$d гравець)</item>
+        <item quantity="few">Почати (%1$d гравці)</item>
+        <item quantity="many">Почати (%1$d гравців)</item>
+        <item quantity="other">Почати (%1$d гравця)</item>
+    </plurals>
+    <string name="players_empty_title">Немає гравців</string>
+    <string name="players_empty_subtitle">Натисніть +, щоб додати гравців</string>
+    <string name="players_delete">Видалити</string>
+
+    <!-- Delete Player Dialog -->
+    <string name="delete_player_title">Видалити гравця</string>
+    <string name="delete_player_message">Ви впевнені, що хочете видалити %1$s? Гравця також буде видалено з історії ігор.</string>
+
+    <!-- Game Screen -->
+    <string name="game_title">Гра</string>
+    <string name="game_sort">Сортувати</string>
+    <string name="game_end">Завершити гру</string>
+    <string name="game_subtract_one">Відняти 1</string>
+    <string name="game_add_one">Додати 1</string>
+    <string name="game_custom_score">+/-</string>
+
+    <!-- End Game Dialog -->
+    <string name="end_game_title">Завершити гру</string>
+    <string name="end_game_message">Ви впевнені, що хочете завершити гру? Рахунок буде збережено.</string>
+
+    <!-- Sort Options -->
+    <string name="sort_score_high_to_low">Рахунок (від найбільшого)</string>
+    <string name="sort_score_low_to_high">Рахунок (від найменшого)</string>
+    <string name="sort_alphabetical">За алфавітом</string>
+    <string name="sort_original">Початковий порядок</string>
+
+    <!-- Results Screen -->
+    <string name="results_title">Результати</string>
+    <string name="results_new_game">Нова гра</string>
+    <string name="results_view_history">Переглянути історію</string>
+    <string name="results_winner">Переможець!</string>
+    <string name="results_winners">Переможці!</string>
+    <plurals name="results_points">
+        <item quantity="one">%1$d очко</item>
+        <item quantity="few">%1$d очки</item>
+        <item quantity="many">%1$d очок</item>
+        <item quantity="other">%1$d очка</item>
+    </plurals>
+    <string name="results_trophy">Трофей</string>
+
+    <!-- History Screen -->
+    <string name="history_title">Історія ігор</string>
+    <string name="history_back">Назад</string>
+    <string name="history_empty_title">Немає ігор</string>
+    <string name="history_empty_subtitle">Завершені ігри з\'являться тут</string>
+    <string name="history_unknown_date">Невідома дата</string>
+    <string name="history_no_winner">Немає переможця</string>
+    <plurals name="history_players_count">
+        <item quantity="one">%1$d гравець</item>
+        <item quantity="few">%1$d гравці</item>
+        <item quantity="many">%1$d гравців</item>
+        <item quantity="other">%1$d гравця</item>
+    </plurals>
+    <string name="history_delete_game">Видалити гру</string>
+    <string name="history_collapse">Згорнути</string>
+    <string name="history_expand">Розгорнути</string>
+
+    <!-- Delete Game Dialog -->
+    <string name="delete_game_title">Видалити гру</string>
+    <string name="delete_game_message">Видалити цю гру? Цю дію неможливо скасувати.</string>
+
+    <!-- Add Player Dialog -->
+    <string name="add_player_title">Додати гравця</string>
+    <string name="add_player_name_label">Ім\'я гравця</string>
+
+    <!-- Add Score Dialog -->
+    <string name="add_score_title">Додати очки</string>
+    <string name="add_score_message">Введіть рахунок для %1$s</string>
+    <string name="add_score_label">Рахунок (+/-)</string>
+
+    <!-- Common Actions -->
+    <string name="action_add">Додати</string>
+    <string name="action_cancel">Скасувати</string>
+    <string name="action_delete">Видалити</string>
+</resources>

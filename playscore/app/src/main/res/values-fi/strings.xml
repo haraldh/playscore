@@ -1,0 +1,83 @@
+<resources>
+    <string name="app_name">PlayScore</string>
+
+    <!-- Players Screen -->
+    <string name="players_title">PlayScore</string>
+    <string name="players_history_button">Historia</string>
+    <string name="players_add_player">Lisää pelaaja</string>
+    <string name="players_select_to_start">Valitse pelaajat aloittaaksesi</string>
+    <plurals name="players_start_game">
+        <item quantity="one">Aloita (%1$d pelaaja)</item>
+        <item quantity="other">Aloita (%1$d pelaajaa)</item>
+    </plurals>
+    <string name="players_empty_title">Ei pelaajia</string>
+    <string name="players_empty_subtitle">Lisää pelaajia napauttamalla +</string>
+    <string name="players_delete">Poista</string>
+
+    <!-- Delete Player Dialog -->
+    <string name="delete_player_title">Poista pelaaja</string>
+    <string name="delete_player_message">Haluatko varmasti poistaa pelaajan %1$s? Tämä poistaa pelaajan myös pelihistoriasta.</string>
+
+    <!-- Game Screen -->
+    <string name="game_title">Peli</string>
+    <string name="game_sort">Järjestä</string>
+    <string name="game_end">Lopeta peli</string>
+    <string name="game_subtract_one">Vähennä 1</string>
+    <string name="game_add_one">Lisää 1</string>
+    <string name="game_custom_score">+/-</string>
+
+    <!-- End Game Dialog -->
+    <string name="end_game_title">Lopeta peli</string>
+    <string name="end_game_message">Haluatko varmasti lopettaa pelin? Pisteet tallennetaan.</string>
+
+    <!-- Sort Options -->
+    <string name="sort_score_high_to_low">Pisteet (suurimmasta pienimpään)</string>
+    <string name="sort_score_low_to_high">Pisteet (pienimmästä suurimpaan)</string>
+    <string name="sort_alphabetical">Aakkosjärjestys</string>
+    <string name="sort_original">Alkuperäinen järjestys</string>
+
+    <!-- Results Screen -->
+    <string name="results_title">Tulokset</string>
+    <string name="results_new_game">Uusi peli</string>
+    <string name="results_view_history">Näytä historia</string>
+    <string name="results_winner">Voittaja!</string>
+    <string name="results_winners">Voittajat!</string>
+    <plurals name="results_points">
+        <item quantity="one">%1$d piste</item>
+        <item quantity="other">%1$d pistettä</item>
+    </plurals>
+    <string name="results_trophy">Palkinto</string>
+
+    <!-- History Screen -->
+    <string name="history_title">Pelihistoria</string>
+    <string name="history_back">Takaisin</string>
+    <string name="history_empty_title">Ei pelejä</string>
+    <string name="history_empty_subtitle">Valmiit pelit näkyvät täällä</string>
+    <string name="history_unknown_date">Tuntematon päivämäärä</string>
+    <string name="history_no_winner">Ei voittajaa</string>
+    <plurals name="history_players_count">
+        <item quantity="one">%1$d pelaaja</item>
+        <item quantity="other">%1$d pelaajaa</item>
+    </plurals>
+    <string name="history_delete_game">Poista peli</string>
+    <string name="history_collapse">Pienennä</string>
+    <string name="history_expand">Laajenna</string>
+
+    <!-- Delete Game Dialog -->
+    <string name="delete_game_title">Poista peli</string>
+    <string name="delete_game_message">Poistetaanko tämä peli? Tätä toimintoa ei voi kumota.</string>
+
+    <!-- Add Player Dialog -->
+    <string name="add_player_title">Lisää pelaaja</string>
+    <string name="add_player_name_label">Pelaajan nimi</string>
+
+    <!-- Add Score Dialog -->
+    <string name="add_score_title">Lisää pisteet</string>
+    <string name="add_score_message">Syötä pisteet pelaajalle %1$s</string>
+    <string name="add_score_label">Pisteet (+/-)</string>
+
+    <!-- Common Actions -->
+    <string name="action_add">Lisää</string>
+    <string name="action_cancel">Peruuta</string>
+    <string name="action_delete">Poista</string>
+</resources>

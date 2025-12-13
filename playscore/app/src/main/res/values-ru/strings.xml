@@ -1,0 +1,89 @@
+<resources>
+    <string name="app_name">PlayScore</string>
+
+    <!-- Players Screen -->
+    <string name="players_title">PlayScore</string>
+    <string name="players_history_button">История</string>
+    <string name="players_add_player">Добавить игрока</string>
+    <string name="players_select_to_start">Выберите игроков для начала</string>
+    <plurals name="players_start_game">
+        <item quantity="one">Начать (%1$d игрок)</item>
+        <item quantity="few">Начать (%1$d игрока)</item>
+        <item quantity="many">Начать (%1$d игроков)</item>
+        <item quantity="other">Начать (%1$d игрока)</item>
+    </plurals>
+    <string name="players_empty_title">Нет игроков</string>
+    <string name="players_empty_subtitle">Нажмите +, чтобы добавить игроков</string>
+    <string name="players_delete">Удалить</string>
+
+    <!-- Delete Player Dialog -->
+    <string name="delete_player_title">Удалить игрока</string>
+    <string name="delete_player_message">Вы уверены, что хотите удалить %1$s? Игрок также будет удалён из истории игр.</string>
+
+    <!-- Game Screen -->
+    <string name="game_title">Игра</string>
+    <string name="game_sort">Сортировать</string>
+    <string name="game_end">Завершить игру</string>
+    <string name="game_subtract_one">Вычесть 1</string>
+    <string name="game_add_one">Добавить 1</string>
+    <string name="game_custom_score">+/-</string>
+
+    <!-- End Game Dialog -->
+    <string name="end_game_title">Завершить игру</string>
+    <string name="end_game_message">Вы уверены, что хотите завершить игру? Счёт будет сохранён.</string>
+
+    <!-- Sort Options -->
+    <string name="sort_score_high_to_low">Счёт (по убыванию)</string>
+    <string name="sort_score_low_to_high">Счёт (по возрастанию)</string>
+    <string name="sort_alphabetical">По алфавиту</string>
+    <string name="sort_original">Исходный порядок</string>
+
+    <!-- Results Screen -->
+    <string name="results_title">Результаты</string>
+    <string name="results_new_game">Новая игра</string>
+    <string name="results_view_history">Посмотреть историю</string>
+    <string name="results_winner">Победитель!</string>
+    <string name="results_winners">Победители!</string>
+    <plurals name="results_points">
+        <item quantity="one">%1$d очко</item>
+        <item quantity="few">%1$d очка</item>
+        <item quantity="many">%1$d очков</item>
+        <item quantity="other">%1$d очка</item>
+    </plurals>
+    <string name="results_trophy">Трофей</string>
+
+    <!-- History Screen -->
+    <string name="history_title">История игр</string>
+    <string name="history_back">Назад</string>
+    <string name="history_empty_title">Нет игр</string>
+    <string name="history_empty_subtitle">Завершённые игры появятся здесь</string>
+    <string name="history_unknown_date">Неизвестная дата</string>
+    <string name="history_no_winner">Нет победителя</string>
+    <plurals name="history_players_count">
+        <item quantity="one">%1$d игрок</item>
+        <item quantity="few">%1$d игрока</item>
+        <item quantity="many">%1$d игроков</item>
+        <item quantity="other">%1$d игрока</item>
+    </plurals>
+    <string name="history_delete_game">Удалить игру</string>
+    <string name="history_collapse">Свернуть</string>
+    <string name="history_expand">Развернуть</string>
+
+    <!-- Delete Game Dialog -->
+    <string name="delete_game_title">Удалить игру</string>
+    <string name="delete_game_message">Удалить эту игру? Это действие нельзя отменить.</string>
+
+    <!-- Add Player Dialog -->
+    <string name="add_player_title">Добавить игрока</string>
+    <string name="add_player_name_label">Имя игрока</string>
+
+    <!-- Add Score Dialog -->
+    <string name="add_score_title">Добавить очки</string>
+    <string name="add_score_message">Введите счёт для %1$s</string>
+    <string name="add_score_label">Счёт (+/-)</string>
+
+    <!-- Common Actions -->
+    <string name="action_add">Добавить</string>
+    <string name="action_cancel">Отмена</string>
+    <string name="action_delete">Удалить</string>
+</resources>

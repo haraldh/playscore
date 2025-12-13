@@ -1,4 +1,83 @@
 <resources>
     <string name="app_name">PlayScore</string>
-    <string name="hello_world">Hello World!</string>
+
+    <!-- Players Screen -->
+    <string name="players_title">PlayScore</string>
+    <string name="players_history_button">History</string>
+    <string name="players_add_player">Add player</string>
+    <string name="players_select_to_start">Select players to start</string>
+    <plurals name="players_start_game">
+        <item quantity="one">Start Game (%1$d player)</item>
+        <item quantity="other">Start Game (%1$d players)</item>
+    </plurals>
+    <string name="players_empty_title">No players yet</string>
+    <string name="players_empty_subtitle">Tap + to add players</string>
+    <string name="players_delete">Delete</string>
+
+    <!-- Delete Player Dialog -->
+    <string name="delete_player_title">Delete Player</string>
+    <string name="delete_player_message">Are you sure you want to delete %1$s? This will also remove them from game history.</string>
+
+    <!-- Game Screen -->
+    <string name="game_title">Game</string>
+    <string name="game_sort">Sort</string>
+    <string name="game_end">End Game</string>
+    <string name="game_subtract_one">Subtract 1</string>
+    <string name="game_add_one">Add 1</string>
+    <string name="game_custom_score">+/-</string>
+
+    <!-- End Game Dialog -->
+    <string name="end_game_title">End Game</string>
+    <string name="end_game_message">Are you sure you want to end the game? The scores will be saved.</string>
+
+    <!-- Sort Options -->
+    <string name="sort_score_high_to_low">Score (High to Low)</string>
+    <string name="sort_score_low_to_high">Score (Low to High)</string>
+    <string name="sort_alphabetical">Alphabetical</string>
+    <string name="sort_original">Original Order</string>
+
+    <!-- Results Screen -->
+    <string name="results_title">Results</string>
+    <string name="results_new_game">New Game</string>
+    <string name="results_view_history">View History</string>
+    <string name="results_winner">Winner!</string>
+    <string name="results_winners">Winners!</string>
+    <plurals name="results_points">
+        <item quantity="one">%1$d point</item>
+        <item quantity="other">%1$d points</item>
+    </plurals>
+    <string name="results_trophy">Trophy</string>
+
+    <!-- History Screen -->
+    <string name="history_title">Game History</string>
+    <string name="history_back">Back</string>
+    <string name="history_empty_title">No games yet</string>
+    <string name="history_empty_subtitle">Completed games will appear here</string>
+    <string name="history_unknown_date">Unknown date</string>
+    <string name="history_no_winner">No winner</string>
+    <plurals name="history_players_count">
+        <item quantity="one">%1$d player</item>
+        <item quantity="other">%1$d players</item>
+    </plurals>
+    <string name="history_delete_game">Delete game</string>
+    <string name="history_collapse">Collapse</string>
+    <string name="history_expand">Expand</string>
+
+    <!-- Delete Game Dialog -->
+    <string name="delete_game_title">Delete Game</string>
+    <string name="delete_game_message">Delete this game? This action cannot be undone.</string>
+
+    <!-- Add Player Dialog -->
+    <string name="add_player_title">Add Player</string>
+    <string name="add_player_name_label">Player name</string>
+
+    <!-- Add Score Dialog -->
+    <string name="add_score_title">Add Score</string>
+    <string name="add_score_message">Enter score for %1$s</string>
+    <string name="add_score_label">Score (+/-)</string>
+
+    <!-- Common Actions -->
+    <string name="action_add">Add</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_delete">Delete</string>
 </resources>

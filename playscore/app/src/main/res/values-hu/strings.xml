@@ -1,0 +1,83 @@
+<resources>
+    <string name="app_name">PlayScore</string>
+
+    <!-- Players Screen -->
+    <string name="players_title">PlayScore</string>
+    <string name="players_history_button">Előzmények</string>
+    <string name="players_add_player">Játékos hozzáadása</string>
+    <string name="players_select_to_start">Válassz játékosokat a kezdéshez</string>
+    <plurals name="players_start_game">
+        <item quantity="one">Indítás (%1$d játékos)</item>
+        <item quantity="other">Indítás (%1$d játékos)</item>
+    </plurals>
+    <string name="players_empty_title">Nincsenek játékosok</string>
+    <string name="players_empty_subtitle">Érintsd meg a + jelet játékosok hozzáadásához</string>
+    <string name="players_delete">Törlés</string>
+
+    <!-- Delete Player Dialog -->
+    <string name="delete_player_title">Játékos törlése</string>
+    <string name="delete_player_message">Biztosan törölni szeretnéd %1$s játékost? Ez eltávolítja a játékelőzményekből is.</string>
+
+    <!-- Game Screen -->
+    <string name="game_title">Játék</string>
+    <string name="game_sort">Rendezés</string>
+    <string name="game_end">Játék befejezése</string>
+    <string name="game_subtract_one">1 levonása</string>
+    <string name="game_add_one">1 hozzáadása</string>
+    <string name="game_custom_score">+/-</string>
+
+    <!-- End Game Dialog -->
+    <string name="end_game_title">Játék befejezése</string>
+    <string name="end_game_message">Biztosan befejezed a játékot? A pontszámok mentésre kerülnek.</string>
+
+    <!-- Sort Options -->
+    <string name="sort_score_high_to_low">Pontszám (csökkenő)</string>
+    <string name="sort_score_low_to_high">Pontszám (növekvő)</string>
+    <string name="sort_alphabetical">Betűrend</string>
+    <string name="sort_original">Eredeti sorrend</string>
+
+    <!-- Results Screen -->
+    <string name="results_title">Eredmények</string>
+    <string name="results_new_game">Új játék</string>
+    <string name="results_view_history">Előzmények megtekintése</string>
+    <string name="results_winner">Győztes!</string>
+    <string name="results_winners">Győztesek!</string>
+    <plurals name="results_points">
+        <item quantity="one">%1$d pont</item>
+        <item quantity="other">%1$d pont</item>
+    </plurals>
+    <string name="results_trophy">Trófea</string>
+
+    <!-- History Screen -->
+    <string name="history_title">Játékelőzmények</string>
+    <string name="history_back">Vissza</string>
+    <string name="history_empty_title">Nincsenek játékok</string>
+    <string name="history_empty_subtitle">A befejezett játékok itt jelennek meg</string>
+    <string name="history_unknown_date">Ismeretlen dátum</string>
+    <string name="history_no_winner">Nincs győztes</string>
+    <plurals name="history_players_count">
+        <item quantity="one">%1$d játékos</item>
+        <item quantity="other">%1$d játékos</item>
+    </plurals>
+    <string name="history_delete_game">Játék törlése</string>
+    <string name="history_collapse">Összecsukás</string>
+    <string name="history_expand">Kibontás</string>
+
+    <!-- Delete Game Dialog -->
+    <string name="delete_game_title">Játék törlése</string>
+    <string name="delete_game_message">Törlöd ezt a játékot? Ez a művelet nem vonható vissza.</string>
+
+    <!-- Add Player Dialog -->
+    <string name="add_player_title">Játékos hozzáadása</string>
+    <string name="add_player_name_label">Játékos neve</string>
+
+    <!-- Add Score Dialog -->
+    <string name="add_score_title">Pontszám hozzáadása</string>
+    <string name="add_score_message">Add meg a pontszámot: %1$s</string>
+    <string name="add_score_label">Pontszám (+/-)</string>
+
+    <!-- Common Actions -->
+    <string name="action_add">Hozzáadás</string>
+    <string name="action_cancel">Mégse</string>
+    <string name="action_delete">Törlés</string>
+</resources>

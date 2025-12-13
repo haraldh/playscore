@@ -41,9 +41,11 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
+import org.surfsite.playscore.R
 import kotlinx.coroutines.launch
 import org.surfsite.playscore.PlayScoreApplication
 import org.surfsite.playscore.data.local.dao.PlayerWithScoreDto
@@ -69,11 +71,11 @@ fun GameScreen(
     Scaffold(
         topBar = {
             TopAppBar(
-                title = { Text("Game") },
+                title = { Text(stringResource(R.string.game_title)) },
                 actions = {
                     Box {
                         IconButton(onClick = { showSortMenu = true }) {
-                            Icon(Icons.AutoMirrored.Filled.Sort, contentDescription = "Sort")
+                            Icon(Icons.AutoMirrored.Filled.Sort, contentDescription = stringResource(R.string.game_sort))
                         }
                         DropdownMenu(
                             expanded = showSortMenu,
@@ -107,7 +109,7 @@ fun GameScreen(
                         .fillMaxWidth()
                         .padding(16.dp)
                 ) {
-                    Text("End Game")
+                    Text(stringResource(R.string.game_end))
                 }
             }
         }
@@ -155,9 +157,9 @@ fun GameScreen(
 
     if (uiState.showEndGameConfirmation) {
         ConfirmationDialog(
-            title = "End Game",
-            message = "Are you sure you want to end the game? The scores will be saved.",
-            confirmText = "End Game",
+            title = stringResource(R.string.end_game_title),
+            message = stringResource(R.string.end_game_message),
+            confirmText = stringResource(R.string.game_end),
             onConfirm = {
                 scope.launch {
                     val endedGameId = viewModel.endGame()
@@ -208,23 +210,24 @@ private fun PlayerScoreCard(
                 verticalAlignment = Alignment.CenterVertically
             ) {
                 FilledTonalButton(onClick = onQuickSubtract) {
-                    Icon(Icons.Default.Remove, contentDescription = "Subtract 1")
+                    Icon(Icons.Default.Remove, contentDescription = stringResource(R.string.game_subtract_one))
                 }
                 FilledTonalButton(onClick = onQuickAdd) {
-                    Icon(Icons.Default.Add, contentDescription = "Add 1")
+                    Icon(Icons.Default.Add, contentDescription = stringResource(R.string.game_add_one))
                 }
                 Spacer(modifier = Modifier.width(8.dp))
                 Button(onClick = onCustomScore) {
-                    Text("+/-")
+                    Text(stringResource(R.string.game_custom_score))
                 }
             }
         }
     }
 }
 
+@Composable
 private fun SortOrder.displayName(): String = when (this) {
-    SortOrder.SCORE_HIGH_TO_LOW -> "Score (High to Low)"
-    SortOrder.SCORE_LOW_TO_HIGH -> "Score (Low to High)"
-    SortOrder.ALPHABETICAL -> "Alphabetical"
-    SortOrder.ORIGINAL_ORDER -> "Original Order"
+    SortOrder.SCORE_HIGH_TO_LOW -> stringResource(R.string.sort_score_high_to_low)
+    SortOrder.SCORE_LOW_TO_HIGH -> stringResource(R.string.sort_score_low_to_high)
+    SortOrder.ALPHABETICAL -> stringResource(R.string.sort_alphabetical)
+    SortOrder.ORIGINAL_ORDER -> stringResource(R.string.sort_original)
 }

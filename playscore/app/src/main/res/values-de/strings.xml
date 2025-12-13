@@ -1,0 +1,83 @@
+<resources>
+    <string name="app_name">PlayScore</string>
+
+    <!-- Players Screen -->
+    <string name="players_title">PlayScore</string>
+    <string name="players_history_button">Verlauf</string>
+    <string name="players_add_player">Spieler hinzufügen</string>
+    <string name="players_select_to_start">Spieler auswählen zum Starten</string>
+    <plurals name="players_start_game">
+        <item quantity="one">Spiel starten (%1$d Spieler)</item>
+        <item quantity="other">Spiel starten (%1$d Spieler)</item>
+    </plurals>
+    <string name="players_empty_title">Noch keine Spieler</string>
+    <string name="players_empty_subtitle">Tippe + um Spieler hinzuzufügen</string>
+    <string name="players_delete">Löschen</string>
+
+    <!-- Delete Player Dialog -->
+    <string name="delete_player_title">Spieler löschen</string>
+    <string name="delete_player_message">Möchtest du %1$s wirklich löschen? Der Spieler wird auch aus dem Spielverlauf entfernt.</string>
+
+    <!-- Game Screen -->
+    <string name="game_title">Spiel</string>
+    <string name="game_sort">Sortieren</string>
+    <string name="game_end">Spiel beenden</string>
+    <string name="game_subtract_one">1 abziehen</string>
+    <string name="game_add_one">1 hinzufügen</string>
+    <string name="game_custom_score">+/-</string>
+
+    <!-- End Game Dialog -->
+    <string name="end_game_title">Spiel beenden</string>
+    <string name="end_game_message">Möchtest du das Spiel wirklich beenden? Die Punkte werden gespeichert.</string>
+
+    <!-- Sort Options -->
+    <string name="sort_score_high_to_low">Punkte (Hoch zu Niedrig)</string>
+    <string name="sort_score_low_to_high">Punkte (Niedrig zu Hoch)</string>
+    <string name="sort_alphabetical">Alphabetisch</string>
+    <string name="sort_original">Ursprüngliche Reihenfolge</string>
+
+    <!-- Results Screen -->
+    <string name="results_title">Ergebnisse</string>
+    <string name="results_new_game">Neues Spiel</string>
+    <string name="results_view_history">Verlauf anzeigen</string>
+    <string name="results_winner">Gewinner!</string>
+    <string name="results_winners">Gewinner!</string>
+    <plurals name="results_points">
+        <item quantity="one">%1$d Punkt</item>
+        <item quantity="other">%1$d Punkte</item>
+    </plurals>
+    <string name="results_trophy">Pokal</string>
+
+    <!-- History Screen -->
+    <string name="history_title">Spielverlauf</string>
+    <string name="history_back">Zurück</string>
+    <string name="history_empty_title">Noch keine Spiele</string>
+    <string name="history_empty_subtitle">Abgeschlossene Spiele erscheinen hier</string>
+    <string name="history_unknown_date">Unbekanntes Datum</string>
+    <string name="history_no_winner">Kein Gewinner</string>
+    <plurals name="history_players_count">
+        <item quantity="one">%1$d Spieler</item>
+        <item quantity="other">%1$d Spieler</item>
+    </plurals>
+    <string name="history_delete_game">Spiel löschen</string>
+    <string name="history_collapse">Einklappen</string>
+    <string name="history_expand">Ausklappen</string>
+
+    <!-- Delete Game Dialog -->
+    <string name="delete_game_title">Spiel löschen</string>
+    <string name="delete_game_message">Dieses Spiel löschen? Diese Aktion kann nicht rückgängig gemacht werden.</string>
+
+    <!-- Add Player Dialog -->
+    <string name="add_player_title">Spieler hinzufügen</string>
+    <string name="add_player_name_label">Spielername</string>
+
+    <!-- Add Score Dialog -->
+    <string name="add_score_title">Punkte hinzufügen</string>
+    <string name="add_score_message">Punkte eingeben für %1$s</string>
+    <string name="add_score_label">Punkte (+/-)</string>
+
+    <!-- Common Actions -->
+    <string name="action_add">Hinzufügen</string>
+    <string name="action_cancel">Abbrechen</string>
+    <string name="action_delete">Löschen</string>
+</resources>

@@ -1,0 +1,83 @@
+<resources>
+    <string name="app_name">PlayScore</string>
+
+    <!-- Players Screen -->
+    <string name="players_title">PlayScore</string>
+    <string name="players_history_button">Geschiedenis</string>
+    <string name="players_add_player">Speler toevoegen</string>
+    <string name="players_select_to_start">Selecteer spelers om te beginnen</string>
+    <plurals name="players_start_game">
+        <item quantity="one">Starten (%1$d speler)</item>
+        <item quantity="other">Starten (%1$d spelers)</item>
+    </plurals>
+    <string name="players_empty_title">Geen spelers</string>
+    <string name="players_empty_subtitle">Tik op + om spelers toe te voegen</string>
+    <string name="players_delete">Verwijderen</string>
+
+    <!-- Delete Player Dialog -->
+    <string name="delete_player_title">Speler verwijderen</string>
+    <string name="delete_player_message">Weet je zeker dat je %1$s wilt verwijderen? Dit verwijdert ook de spelgeschiedenis.</string>
+
+    <!-- Game Screen -->
+    <string name="game_title">Spel</string>
+    <string name="game_sort">Sorteren</string>
+    <string name="game_end">Spel beëindigen</string>
+    <string name="game_subtract_one">1 aftrekken</string>
+    <string name="game_add_one">1 toevoegen</string>
+    <string name="game_custom_score">+/-</string>
+
+    <!-- End Game Dialog -->
+    <string name="end_game_title">Spel beëindigen</string>
+    <string name="end_game_message">Weet je zeker dat je het spel wilt beëindigen? De scores worden opgeslagen.</string>
+
+    <!-- Sort Options -->
+    <string name="sort_score_high_to_low">Score (hoog naar laag)</string>
+    <string name="sort_score_low_to_high">Score (laag naar hoog)</string>
+    <string name="sort_alphabetical">Alfabetisch</string>
+    <string name="sort_original">Oorspronkelijke volgorde</string>
+
+    <!-- Results Screen -->
+    <string name="results_title">Resultaten</string>
+    <string name="results_new_game">Nieuw spel</string>
+    <string name="results_view_history">Geschiedenis bekijken</string>
+    <string name="results_winner">Winnaar!</string>
+    <string name="results_winners">Winnaars!</string>
+    <plurals name="results_points">
+        <item quantity="one">%1$d punt</item>
+        <item quantity="other">%1$d punten</item>
+    </plurals>
+    <string name="results_trophy">Trofee</string>
+
+    <!-- History Screen -->
+    <string name="history_title">Spelgeschiedenis</string>
+    <string name="history_back">Terug</string>
+    <string name="history_empty_title">Geen spellen</string>
+    <string name="history_empty_subtitle">Voltooide spellen verschijnen hier</string>
+    <string name="history_unknown_date">Onbekende datum</string>
+    <string name="history_no_winner">Geen winnaar</string>
+    <plurals name="history_players_count">
+        <item quantity="one">%1$d speler</item>
+        <item quantity="other">%1$d spelers</item>
+    </plurals>
+    <string name="history_delete_game">Spel verwijderen</string>
+    <string name="history_collapse">Inklappen</string>
+    <string name="history_expand">Uitklappen</string>
+
+    <!-- Delete Game Dialog -->
+    <string name="delete_game_title">Spel verwijderen</string>
+    <string name="delete_game_message">Dit spel verwijderen? Deze actie kan niet ongedaan worden gemaakt.</string>
+
+    <!-- Add Player Dialog -->
+    <string name="add_player_title">Speler toevoegen</string>
+    <string name="add_player_name_label">Naam speler</string>
+
+    <!-- Add Score Dialog -->
+    <string name="add_score_title">Score toevoegen</string>
+    <string name="add_score_message">Voer score in voor %1$s</string>
+    <string name="add_score_label">Score (+/-)</string>
+
+    <!-- Common Actions -->
+    <string name="action_add">Toevoegen</string>
+    <string name="action_cancel">Annuleren</string>
+    <string name="action_delete">Verwijderen</string>
+</resources>

@@ -1,0 +1,83 @@
+<resources>
+    <string name="app_name">PlayScore</string>
+
+    <!-- Players Screen -->
+    <string name="players_title">PlayScore</string>
+    <string name="players_history_button">Ιστορικό</string>
+    <string name="players_add_player">Προσθήκη παίκτη</string>
+    <string name="players_select_to_start">Επιλέξτε παίκτες για να ξεκινήσετε</string>
+    <plurals name="players_start_game">
+        <item quantity="one">Έναρξη (%1$d παίκτης)</item>
+        <item quantity="other">Έναρξη (%1$d παίκτες)</item>
+    </plurals>
+    <string name="players_empty_title">Δεν υπάρχουν παίκτες</string>
+    <string name="players_empty_subtitle">Πατήστε + για να προσθέσετε παίκτες</string>
+    <string name="players_delete">Διαγραφή</string>
+
+    <!-- Delete Player Dialog -->
+    <string name="delete_player_title">Διαγραφή παίκτη</string>
+    <string name="delete_player_message">Είστε σίγουροι ότι θέλετε να διαγράψετε τον/την %1$s; Θα αφαιρεθεί και από το ιστορικό παιχνιδιών.</string>
+
+    <!-- Game Screen -->
+    <string name="game_title">Παιχνίδι</string>
+    <string name="game_sort">Ταξινόμηση</string>
+    <string name="game_end">Τέλος παιχνιδιού</string>
+    <string name="game_subtract_one">Αφαίρεση 1</string>
+    <string name="game_add_one">Προσθήκη 1</string>
+    <string name="game_custom_score">+/-</string>
+
+    <!-- End Game Dialog -->
+    <string name="end_game_title">Τέλος παιχνιδιού</string>
+    <string name="end_game_message">Είστε σίγουροι ότι θέλετε να τερματίσετε το παιχνίδι; Τα σκορ θα αποθηκευτούν.</string>
+
+    <!-- Sort Options -->
+    <string name="sort_score_high_to_low">Σκορ (υψηλό προς χαμηλό)</string>
+    <string name="sort_score_low_to_high">Σκορ (χαμηλό προς υψηλό)</string>
+    <string name="sort_alphabetical">Αλφαβητικά</string>
+    <string name="sort_original">Αρχική σειρά</string>
+
+    <!-- Results Screen -->
+    <string name="results_title">Αποτελέσματα</string>
+    <string name="results_new_game">Νέο παιχνίδι</string>
+    <string name="results_view_history">Προβολή ιστορικού</string>
+    <string name="results_winner">Νικητής!</string>
+    <string name="results_winners">Νικητές!</string>
+    <plurals name="results_points">
+        <item quantity="one">%1$d πόντος</item>
+        <item quantity="other">%1$d πόντοι</item>
+    </plurals>
+    <string name="results_trophy">Τρόπαιο</string>
+
+    <!-- History Screen -->
+    <string name="history_title">Ιστορικό παιχνιδιών</string>
+    <string name="history_back">Πίσω</string>
+    <string name="history_empty_title">Δεν υπάρχουν παιχνίδια</string>
+    <string name="history_empty_subtitle">Τα ολοκληρωμένα παιχνίδια θα εμφανιστούν εδώ</string>
+    <string name="history_unknown_date">Άγνωστη ημερομηνία</string>
+    <string name="history_no_winner">Κανένας νικητής</string>
+    <plurals name="history_players_count">
+        <item quantity="one">%1$d παίκτης</item>
+        <item quantity="other">%1$d παίκτες</item>
+    </plurals>
+    <string name="history_delete_game">Διαγραφή παιχνιδιού</string>
+    <string name="history_collapse">Σύμπτυξη</string>
+    <string name="history_expand">Ανάπτυξη</string>
+
+    <!-- Delete Game Dialog -->
+    <string name="delete_game_title">Διαγραφή παιχνιδιού</string>
+    <string name="delete_game_message">Διαγραφή αυτού του παιχνιδιού; Αυτή η ενέργεια δεν μπορεί να αναιρεθεί.</string>
+
+    <!-- Add Player Dialog -->
+    <string name="add_player_title">Προσθήκη παίκτη</string>
+    <string name="add_player_name_label">Όνομα παίκτη</string>
+
+    <!-- Add Score Dialog -->
+    <string name="add_score_title">Προσθήκη σκορ</string>
+    <string name="add_score_message">Εισάγετε σκορ για %1$s</string>
+    <string name="add_score_label">Σκορ (+/-)</string>
+
+    <!-- Common Actions -->
+    <string name="action_add">Προσθήκη</string>
+    <string name="action_cancel">Ακύρωση</string>
+    <string name="action_delete">Διαγραφή</string>
+</resources>
