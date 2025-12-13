@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.1](https://github.com/haraldh/playscore/compare/v1.2.0...v1.2.1) (2025-12-13)
+
+
+### Bug Fixes
+
+* derive versionCode from semantic version for proper updates ([#26](https://github.com/haraldh/playscore/issues/26)) ([8a736d4](https://github.com/haraldh/playscore/commit/8a736d482e2110369b70e51aaa8af9ff4ab8f7dc))
+
 ## [1.2.0](https://github.com/haraldh/playscore/compare/v1.1.1...v1.2.0) (2025-12-13)
 
 
