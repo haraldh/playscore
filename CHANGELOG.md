@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/haraldh/playscore/compare/v1.1.1...v1.2.0) (2025-12-13)
+
+
+### Features
+
+* **i18n:** add internationalization with 17 European languages ([#24](https://github.com/haraldh/playscore/issues/24)) ([c9a4ad5](https://github.com/haraldh/playscore/commit/c9a4ad593debf878f668900fcabacd75ff78980b))
+
 ## [1.1.1](https://github.com/haraldh/playscore/compare/v1.1.0...v1.1.1) (2025-12-12)
 
 
