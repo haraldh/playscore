@@ -1,0 +1,74 @@
+<resources>
+    <string name="app_name">PlayScore</string>
+
+    <!-- Players Screen -->
+    <string name="players_title">PlayScore</string>
+    <string name="players_history_button">Historia</string>
+    <string name="players_add_player">Dodaj gracza</string>
+    <string name="players_select_to_start">Wybierz graczy, aby rozpocząć</string>
+    <string name="players_start_game">Rozpocznij (%1$d graczy)</string>
+    <string name="players_empty_title">Brak graczy</string>
+    <string name="players_empty_subtitle">Dotknij +, aby dodać graczy</string>
+    <string name="players_delete">Usuń</string>
+
+    <!-- Delete Player Dialog -->
+    <string name="delete_player_title">Usuń gracza</string>
+    <string name="delete_player_message">Czy na pewno chcesz usunąć %1$s? Gracz zostanie również usunięty z historii gier.</string>
+
+    <!-- Game Screen -->
+    <string name="game_title">Gra</string>
+    <string name="game_sort">Sortuj</string>
+    <string name="game_end">Zakończ grę</string>
+    <string name="game_subtract_one">Odejmij 1</string>
+    <string name="game_add_one">Dodaj 1</string>
+    <string name="game_custom_score">+/-</string>
+
+    <!-- End Game Dialog -->
+    <string name="end_game_title">Zakończ grę</string>
+    <string name="end_game_message">Czy na pewno chcesz zakończyć grę? Wyniki zostaną zapisane.</string>
+
+    <!-- Sort Options -->
+    <string name="sort_score_high_to_low">Wynik (od najwyższego)</string>
+    <string name="sort_score_low_to_high">Wynik (od najniższego)</string>
+    <string name="sort_alphabetical">Alfabetycznie</string>
+    <string name="sort_original">Oryginalna kolejność</string>
+
+    <!-- Results Screen -->
+    <string name="results_title">Wyniki</string>
+    <string name="results_new_game">Nowa gra</string>
+    <string name="results_view_history">Zobacz historię</string>
+    <string name="results_winner">Zwycięzca!</string>
+    <string name="results_winners">Zwycięzcy!</string>
+    <string name="results_points">%1$d punktów</string>
+    <string name="results_trophy">Trofeum</string>
+
+    <!-- History Screen -->
+    <string name="history_title">Historia gier</string>
+    <string name="history_back">Wstecz</string>
+    <string name="history_empty_title">Brak gier</string>
+    <string name="history_empty_subtitle">Ukończone gry pojawią się tutaj</string>
+    <string name="history_unknown_date">Nieznana data</string>
+    <string name="history_no_winner">Brak zwycięzcy</string>
+    <string name="history_players_count">%1$d graczy</string>
+    <string name="history_delete_game">Usuń grę</string>
+    <string name="history_collapse">Zwiń</string>
+    <string name="history_expand">Rozwiń</string>
+
+    <!-- Delete Game Dialog -->
+    <string name="delete_game_title">Usuń grę</string>
+    <string name="delete_game_message">Usunąć tę grę? Tej czynności nie można cofnąć.</string>
+
+    <!-- Add Player Dialog -->
+    <string name="add_player_title">Dodaj gracza</string>
+    <string name="add_player_name_label">Imię gracza</string>
+
+    <!-- Add Score Dialog -->
+    <string name="add_score_title">Dodaj wynik</string>
+    <string name="add_score_message">Wprowadź wynik dla %1$s</string>
+    <string name="add_score_label">Wynik (+/-)</string>
+
+    <!-- Common Actions -->
+    <string name="action_add">Dodaj</string>
+    <string name="action_cancel">Anuluj</string>
+    <string name="action_delete">Usuń</string>
+</resources>

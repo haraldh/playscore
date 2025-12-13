@@ -1,0 +1,74 @@
+<resources>
+    <string name="app_name">PlayScore</string>
+
+    <!-- Players Screen -->
+    <string name="players_title">PlayScore</string>
+    <string name="players_history_button">Cronologia</string>
+    <string name="players_add_player">Aggiungi giocatore</string>
+    <string name="players_select_to_start">Seleziona i giocatori per iniziare</string>
+    <string name="players_start_game">Inizia (%1$d giocatori)</string>
+    <string name="players_empty_title">Nessun giocatore</string>
+    <string name="players_empty_subtitle">Tocca + per aggiungere giocatori</string>
+    <string name="players_delete">Elimina</string>
+
+    <!-- Delete Player Dialog -->
+    <string name="delete_player_title">Elimina giocatore</string>
+    <string name="delete_player_message">Vuoi davvero eliminare %1$s? Verrà rimosso anche dalla cronologia delle partite.</string>
+
+    <!-- Game Screen -->
+    <string name="game_title">Partita</string>
+    <string name="game_sort">Ordina</string>
+    <string name="game_end">Termina partita</string>
+    <string name="game_subtract_one">Sottrai 1</string>
+    <string name="game_add_one">Aggiungi 1</string>
+    <string name="game_custom_score">+/-</string>
+
+    <!-- End Game Dialog -->
+    <string name="end_game_title">Termina partita</string>
+    <string name="end_game_message">Vuoi davvero terminare la partita? I punteggi verranno salvati.</string>
+
+    <!-- Sort Options -->
+    <string name="sort_score_high_to_low">Punteggio (dal più alto)</string>
+    <string name="sort_score_low_to_high">Punteggio (dal più basso)</string>
+    <string name="sort_alphabetical">Alfabetico</string>
+    <string name="sort_original">Ordine originale</string>
+
+    <!-- Results Screen -->
+    <string name="results_title">Risultati</string>
+    <string name="results_new_game">Nuova partita</string>
+    <string name="results_view_history">Vedi cronologia</string>
+    <string name="results_winner">Vincitore!</string>
+    <string name="results_winners">Vincitori!</string>
+    <string name="results_points">%1$d punti</string>
+    <string name="results_trophy">Trofeo</string>
+
+    <!-- History Screen -->
+    <string name="history_title">Cronologia partite</string>
+    <string name="history_back">Indietro</string>
+    <string name="history_empty_title">Nessuna partita</string>
+    <string name="history_empty_subtitle">Le partite completate appariranno qui</string>
+    <string name="history_unknown_date">Data sconosciuta</string>
+    <string name="history_no_winner">Nessun vincitore</string>
+    <string name="history_players_count">%1$d giocatori</string>
+    <string name="history_delete_game">Elimina partita</string>
+    <string name="history_collapse">Comprimi</string>
+    <string name="history_expand">Espandi</string>
+
+    <!-- Delete Game Dialog -->
+    <string name="delete_game_title">Elimina partita</string>
+    <string name="delete_game_message">Eliminare questa partita? Questa azione non può essere annullata.</string>
+
+    <!-- Add Player Dialog -->
+    <string name="add_player_title">Aggiungi giocatore</string>
+    <string name="add_player_name_label">Nome giocatore</string>
+
+    <!-- Add Score Dialog -->
+    <string name="add_score_title">Aggiungi punteggio</string>
+    <string name="add_score_message">Inserisci il punteggio per %1$s</string>
+    <string name="add_score_label">Punteggio (+/-)</string>
+
+    <!-- Common Actions -->
+    <string name="action_add">Aggiungi</string>
+    <string name="action_cancel">Annulla</string>
+    <string name="action_delete">Elimina</string>
+</resources>

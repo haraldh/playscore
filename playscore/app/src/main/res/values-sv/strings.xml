@@ -1,0 +1,74 @@
+<resources>
+    <string name="app_name">PlayScore</string>
+
+    <!-- Players Screen -->
+    <string name="players_title">PlayScore</string>
+    <string name="players_history_button">Historik</string>
+    <string name="players_add_player">Lägg till spelare</string>
+    <string name="players_select_to_start">Välj spelare för att börja</string>
+    <string name="players_start_game">Starta (%1$d spelare)</string>
+    <string name="players_empty_title">Inga spelare</string>
+    <string name="players_empty_subtitle">Tryck på + för att lägga till spelare</string>
+    <string name="players_delete">Ta bort</string>
+
+    <!-- Delete Player Dialog -->
+    <string name="delete_player_title">Ta bort spelare</string>
+    <string name="delete_player_message">Är du säker på att du vill ta bort %1$s? Detta tar även bort spelaren från spelhistoriken.</string>
+
+    <!-- Game Screen -->
+    <string name="game_title">Spel</string>
+    <string name="game_sort">Sortera</string>
+    <string name="game_end">Avsluta spel</string>
+    <string name="game_subtract_one">Dra av 1</string>
+    <string name="game_add_one">Lägg till 1</string>
+    <string name="game_custom_score">+/-</string>
+
+    <!-- End Game Dialog -->
+    <string name="end_game_title">Avsluta spel</string>
+    <string name="end_game_message">Är du säker på att du vill avsluta spelet? Poängen sparas.</string>
+
+    <!-- Sort Options -->
+    <string name="sort_score_high_to_low">Poäng (högst till lägst)</string>
+    <string name="sort_score_low_to_high">Poäng (lägst till högst)</string>
+    <string name="sort_alphabetical">Alfabetisk</string>
+    <string name="sort_original">Ursprunglig ordning</string>
+
+    <!-- Results Screen -->
+    <string name="results_title">Resultat</string>
+    <string name="results_new_game">Nytt spel</string>
+    <string name="results_view_history">Visa historik</string>
+    <string name="results_winner">Vinnare!</string>
+    <string name="results_winners">Vinnare!</string>
+    <string name="results_points">%1$d poäng</string>
+    <string name="results_trophy">Trofé</string>
+
+    <!-- History Screen -->
+    <string name="history_title">Spelhistorik</string>
+    <string name="history_back">Tillbaka</string>
+    <string name="history_empty_title">Inga spel</string>
+    <string name="history_empty_subtitle">Avslutade spel visas här</string>
+    <string name="history_unknown_date">Okänt datum</string>
+    <string name="history_no_winner">Ingen vinnare</string>
+    <string name="history_players_count">%1$d spelare</string>
+    <string name="history_delete_game">Ta bort spel</string>
+    <string name="history_collapse">Minimera</string>
+    <string name="history_expand">Expandera</string>
+
+    <!-- Delete Game Dialog -->
+    <string name="delete_game_title">Ta bort spel</string>
+    <string name="delete_game_message">Ta bort detta spel? Denna åtgärd kan inte ångras.</string>
+
+    <!-- Add Player Dialog -->
+    <string name="add_player_title">Lägg till spelare</string>
+    <string name="add_player_name_label">Spelarnamn</string>
+
+    <!-- Add Score Dialog -->
+    <string name="add_score_title">Lägg till poäng</string>
+    <string name="add_score_message">Ange poäng för %1$s</string>
+    <string name="add_score_label">Poäng (+/-)</string>
+
+    <!-- Common Actions -->
+    <string name="action_add">Lägg till</string>
+    <string name="action_cancel">Avbryt</string>
+    <string name="action_delete">Ta bort</string>
+</resources>

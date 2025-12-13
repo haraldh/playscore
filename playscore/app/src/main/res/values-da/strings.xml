@@ -1,0 +1,74 @@
+<resources>
+    <string name="app_name">PlayScore</string>
+
+    <!-- Players Screen -->
+    <string name="players_title">PlayScore</string>
+    <string name="players_history_button">Historik</string>
+    <string name="players_add_player">Tilføj spiller</string>
+    <string name="players_select_to_start">Vælg spillere for at starte</string>
+    <string name="players_start_game">Start (%1$d spillere)</string>
+    <string name="players_empty_title">Ingen spillere</string>
+    <string name="players_empty_subtitle">Tryk på + for at tilføje spillere</string>
+    <string name="players_delete">Slet</string>
+
+    <!-- Delete Player Dialog -->
+    <string name="delete_player_title">Slet spiller</string>
+    <string name="delete_player_message">Er du sikker på, at du vil slette %1$s? Dette fjerner også spilleren fra spilhistorikken.</string>
+
+    <!-- Game Screen -->
+    <string name="game_title">Spil</string>
+    <string name="game_sort">Sortér</string>
+    <string name="game_end">Afslut spil</string>
+    <string name="game_subtract_one">Træk 1 fra</string>
+    <string name="game_add_one">Tilføj 1</string>
+    <string name="game_custom_score">+/-</string>
+
+    <!-- End Game Dialog -->
+    <string name="end_game_title">Afslut spil</string>
+    <string name="end_game_message">Er du sikker på, at du vil afslutte spillet? Pointene gemmes.</string>
+
+    <!-- Sort Options -->
+    <string name="sort_score_high_to_low">Point (højest til lavest)</string>
+    <string name="sort_score_low_to_high">Point (lavest til højest)</string>
+    <string name="sort_alphabetical">Alfabetisk</string>
+    <string name="sort_original">Original rækkefølge</string>
+
+    <!-- Results Screen -->
+    <string name="results_title">Resultater</string>
+    <string name="results_new_game">Nyt spil</string>
+    <string name="results_view_history">Se historik</string>
+    <string name="results_winner">Vinder!</string>
+    <string name="results_winners">Vindere!</string>
+    <string name="results_points">%1$d point</string>
+    <string name="results_trophy">Trofæ</string>
+
+    <!-- History Screen -->
+    <string name="history_title">Spilhistorik</string>
+    <string name="history_back">Tilbage</string>
+    <string name="history_empty_title">Ingen spil</string>
+    <string name="history_empty_subtitle">Afsluttede spil vises her</string>
+    <string name="history_unknown_date">Ukendt dato</string>
+    <string name="history_no_winner">Ingen vinder</string>
+    <string name="history_players_count">%1$d spillere</string>
+    <string name="history_delete_game">Slet spil</string>
+    <string name="history_collapse">Skjul</string>
+    <string name="history_expand">Udvid</string>
+
+    <!-- Delete Game Dialog -->
+    <string name="delete_game_title">Slet spil</string>
+    <string name="delete_game_message">Slet dette spil? Denne handling kan ikke fortrydes.</string>
+
+    <!-- Add Player Dialog -->
+    <string name="add_player_title">Tilføj spiller</string>
+    <string name="add_player_name_label">Spillernavn</string>
+
+    <!-- Add Score Dialog -->
+    <string name="add_score_title">Tilføj point</string>
+    <string name="add_score_message">Indtast point for %1$s</string>
+    <string name="add_score_label">Point (+/-)</string>
+
+    <!-- Common Actions -->
+    <string name="action_add">Tilføj</string>
+    <string name="action_cancel">Annuller</string>
+    <string name="action_delete">Slet</string>
+</resources>

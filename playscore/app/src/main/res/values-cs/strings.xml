@@ -1,0 +1,74 @@
+<resources>
+    <string name="app_name">PlayScore</string>
+
+    <!-- Players Screen -->
+    <string name="players_title">PlayScore</string>
+    <string name="players_history_button">Historie</string>
+    <string name="players_add_player">Přidat hráče</string>
+    <string name="players_select_to_start">Vyberte hráče pro zahájení</string>
+    <string name="players_start_game">Zahájit (%1$d hráčů)</string>
+    <string name="players_empty_title">Žádní hráči</string>
+    <string name="players_empty_subtitle">Klepnutím na + přidáte hráče</string>
+    <string name="players_delete">Smazat</string>
+
+    <!-- Delete Player Dialog -->
+    <string name="delete_player_title">Smazat hráče</string>
+    <string name="delete_player_message">Opravdu chcete smazat hráče %1$s? Bude také odstraněn z historie her.</string>
+
+    <!-- Game Screen -->
+    <string name="game_title">Hra</string>
+    <string name="game_sort">Seřadit</string>
+    <string name="game_end">Ukončit hru</string>
+    <string name="game_subtract_one">Odečíst 1</string>
+    <string name="game_add_one">Přidat 1</string>
+    <string name="game_custom_score">+/-</string>
+
+    <!-- End Game Dialog -->
+    <string name="end_game_title">Ukončit hru</string>
+    <string name="end_game_message">Opravdu chcete ukončit hru? Skóre bude uloženo.</string>
+
+    <!-- Sort Options -->
+    <string name="sort_score_high_to_low">Skóre (od nejvyššího)</string>
+    <string name="sort_score_low_to_high">Skóre (od nejnižšího)</string>
+    <string name="sort_alphabetical">Abecedně</string>
+    <string name="sort_original">Původní pořadí</string>
+
+    <!-- Results Screen -->
+    <string name="results_title">Výsledky</string>
+    <string name="results_new_game">Nová hra</string>
+    <string name="results_view_history">Zobrazit historii</string>
+    <string name="results_winner">Vítěz!</string>
+    <string name="results_winners">Vítězové!</string>
+    <string name="results_points">%1$d bodů</string>
+    <string name="results_trophy">Trofej</string>
+
+    <!-- History Screen -->
+    <string name="history_title">Historie her</string>
+    <string name="history_back">Zpět</string>
+    <string name="history_empty_title">Žádné hry</string>
+    <string name="history_empty_subtitle">Dokončené hry se zobrazí zde</string>
+    <string name="history_unknown_date">Neznámé datum</string>
+    <string name="history_no_winner">Žádný vítěz</string>
+    <string name="history_players_count">%1$d hráčů</string>
+    <string name="history_delete_game">Smazat hru</string>
+    <string name="history_collapse">Sbalit</string>
+    <string name="history_expand">Rozbalit</string>
+
+    <!-- Delete Game Dialog -->
+    <string name="delete_game_title">Smazat hru</string>
+    <string name="delete_game_message">Smazat tuto hru? Tuto akci nelze vrátit zpět.</string>
+
+    <!-- Add Player Dialog -->
+    <string name="add_player_title">Přidat hráče</string>
+    <string name="add_player_name_label">Jméno hráče</string>
+
+    <!-- Add Score Dialog -->
+    <string name="add_score_title">Přidat skóre</string>
+    <string name="add_score_message">Zadejte skóre pro %1$s</string>
+    <string name="add_score_label">Skóre (+/-)</string>
+
+    <!-- Common Actions -->
+    <string name="action_add">Přidat</string>
+    <string name="action_cancel">Zrušit</string>
+    <string name="action_delete">Smazat</string>
+</resources>

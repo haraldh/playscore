@@ -1,0 +1,74 @@
+<resources>
+    <string name="app_name">PlayScore</string>
+
+    <!-- Players Screen -->
+    <string name="players_title">PlayScore</string>
+    <string name="players_history_button">Istoric</string>
+    <string name="players_add_player">Adaugă jucător</string>
+    <string name="players_select_to_start">Selectează jucătorii pentru a începe</string>
+    <string name="players_start_game">Începe (%1$d jucători)</string>
+    <string name="players_empty_title">Niciun jucător</string>
+    <string name="players_empty_subtitle">Apasă + pentru a adăuga jucători</string>
+    <string name="players_delete">Șterge</string>
+
+    <!-- Delete Player Dialog -->
+    <string name="delete_player_title">Șterge jucătorul</string>
+    <string name="delete_player_message">Ești sigur că vrei să ștergi pe %1$s? Acesta va fi eliminat și din istoricul jocurilor.</string>
+
+    <!-- Game Screen -->
+    <string name="game_title">Joc</string>
+    <string name="game_sort">Sortează</string>
+    <string name="game_end">Termină jocul</string>
+    <string name="game_subtract_one">Scade 1</string>
+    <string name="game_add_one">Adaugă 1</string>
+    <string name="game_custom_score">+/-</string>
+
+    <!-- End Game Dialog -->
+    <string name="end_game_title">Termină jocul</string>
+    <string name="end_game_message">Ești sigur că vrei să termini jocul? Scorurile vor fi salvate.</string>
+
+    <!-- Sort Options -->
+    <string name="sort_score_high_to_low">Scor (de la mare la mic)</string>
+    <string name="sort_score_low_to_high">Scor (de la mic la mare)</string>
+    <string name="sort_alphabetical">Alfabetic</string>
+    <string name="sort_original">Ordine originală</string>
+
+    <!-- Results Screen -->
+    <string name="results_title">Rezultate</string>
+    <string name="results_new_game">Joc nou</string>
+    <string name="results_view_history">Vezi istoricul</string>
+    <string name="results_winner">Câștigător!</string>
+    <string name="results_winners">Câștigători!</string>
+    <string name="results_points">%1$d puncte</string>
+    <string name="results_trophy">Trofeu</string>
+
+    <!-- History Screen -->
+    <string name="history_title">Istoricul jocurilor</string>
+    <string name="history_back">Înapoi</string>
+    <string name="history_empty_title">Niciun joc</string>
+    <string name="history_empty_subtitle">Jocurile finalizate vor apărea aici</string>
+    <string name="history_unknown_date">Dată necunoscută</string>
+    <string name="history_no_winner">Niciun câștigător</string>
+    <string name="history_players_count">%1$d jucători</string>
+    <string name="history_delete_game">Șterge jocul</string>
+    <string name="history_collapse">Restrânge</string>
+    <string name="history_expand">Extinde</string>
+
+    <!-- Delete Game Dialog -->
+    <string name="delete_game_title">Șterge jocul</string>
+    <string name="delete_game_message">Ștergi acest joc? Această acțiune nu poate fi anulată.</string>
+
+    <!-- Add Player Dialog -->
+    <string name="add_player_title">Adaugă jucător</string>
+    <string name="add_player_name_label">Numele jucătorului</string>
+
+    <!-- Add Score Dialog -->
+    <string name="add_score_title">Adaugă scor</string>
+    <string name="add_score_message">Introdu scorul pentru %1$s</string>
+    <string name="add_score_label">Scor (+/-)</string>
+
+    <!-- Common Actions -->
+    <string name="action_add">Adaugă</string>
+    <string name="action_cancel">Anulează</string>
+    <string name="action_delete">Șterge</string>
+</resources>

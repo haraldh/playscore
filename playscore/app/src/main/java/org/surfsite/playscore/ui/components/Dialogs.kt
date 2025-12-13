@@ -18,10 +18,12 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.focus.FocusRequester
 import androidx.compose.ui.focus.focusRequester
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.text.input.KeyboardCapitalization
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
+import org.surfsite.playscore.R
 
 @Composable
 fun ConfirmationDialog(
@@ -63,13 +65,13 @@ fun AddPlayerDialog(
 
     AlertDialog(
         onDismissRequest = onDismiss,
-        title = { Text("Add Player") },
+        title = { Text(stringResource(R.string.add_player_title)) },
         text = {
             Column {
                 OutlinedTextField(
                     value = name,
                     onValueChange = { name = it },
-                    label = { Text("Player name") },
+                    label = { Text(stringResource(R.string.add_player_name_label)) },
                     singleLine = true,
                     modifier = Modifier
                         .fillMaxWidth()
@@ -93,12 +95,12 @@ fun AddPlayerDialog(
                 onClick = { onAddPlayer(name) },
                 enabled = name.isNotBlank()
             ) {
-                Text("Add")
+                Text(stringResource(R.string.action_add))
             }
         },
         dismissButton = {
             TextButton(onClick = onDismiss) {
-                Text("Cancel")
+                Text(stringResource(R.string.action_cancel))
             }
         }
     )
@@ -119,17 +121,17 @@ fun AddScoreDialog(
 
     AlertDialog(
         onDismissRequest = onDismiss,
-        title = { Text("Add Score") },
+        title = { Text(stringResource(R.string.add_score_title)) },
         text = {
             Column {
                 Text(
-                    text = "Enter score for $playerName",
+                    text = stringResource(R.string.add_score_message, playerName),
                     modifier = Modifier.padding(bottom = 8.dp)
                 )
                 OutlinedTextField(
                     value = scoreText,
                     onValueChange = { scoreText = it },
-                    label = { Text("Score (+/-)") },
+                    label = { Text(stringResource(R.string.add_score_label)) },
                     singleLine = true,
                     modifier = Modifier
                         .fillMaxWidth()
@@ -151,12 +153,12 @@ fun AddScoreDialog(
                 onClick = { scoreText.toIntOrNull()?.let { onAddScore(it) } },
                 enabled = scoreText.toIntOrNull() != null
             ) {
-                Text("Add")
+                Text(stringResource(R.string.action_add))
             }
         },
         dismissButton = {
             TextButton(onClick = onDismiss) {
-                Text("Cancel")
+                Text(stringResource(R.string.action_cancel))
             }
         }
     )

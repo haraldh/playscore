@@ -36,9 +36,11 @@ import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
+import org.surfsite.playscore.R
 import org.surfsite.playscore.PlayScoreApplication
 import org.surfsite.playscore.data.repository.GameWithParticipants
 import org.surfsite.playscore.ui.components.ConfirmationDialog
@@ -61,9 +63,9 @@ fun HistoryScreen(
 
     uiState.gameToDelete?.let { game ->
         ConfirmationDialog(
-            title = "Delete Game",
-            message = "Delete this game? This action cannot be undone.",
-            confirmText = "Delete",
+            title = stringResource(R.string.delete_game_title),
+            message = stringResource(R.string.delete_game_message),
+            confirmText = stringResource(R.string.action_delete),
             onConfirm = { viewModel.deleteGame() },
             onDismiss = { viewModel.hideDeleteConfirmation() }
         )
@@ -72,10 +74,10 @@ fun HistoryScreen(
     Scaffold(
         topBar = {
             TopAppBar(
-                title = { Text("Game History") },
+                title = { Text(stringResource(R.string.history_title)) },
                 navigationIcon = {
                     IconButton(onClick = onNavigateBack) {
-                        Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = "Back")
+                        Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = stringResource(R.string.history_back))
                     }
                 }
             )
@@ -105,11 +107,11 @@ fun HistoryScreen(
                         tint = MaterialTheme.colorScheme.onSurfaceVariant
                     )
                     Text(
-                        text = "No games yet",
+                        text = stringResource(R.string.history_empty_title),
                         style = MaterialTheme.typography.titleLarge
                     )
                     Text(
-                        text = "Completed games will appear here",
+                        text = stringResource(R.string.history_empty_subtitle),
                         style = MaterialTheme.typography.bodyMedium,
                         color = MaterialTheme.colorScheme.onSurfaceVariant
                     )
@@ -161,7 +163,7 @@ private fun GameHistoryCard(
             ) {
                 Column(modifier = Modifier.weight(1f)) {
                     Text(
-                        text = game.game.endedAt?.let { dateFormat.format(Date(it)) } ?: "Unknown date",
+                        text = game.game.endedAt?.let { dateFormat.format(Date(it)) } ?: stringResource(R.string.history_unknown_date),
                         style = MaterialTheme.typography.bodySmall,
                         color = MaterialTheme.colorScheme.onSurfaceVariant
                     )
@@ -174,7 +176,7 @@ private fun GameHistoryCard(
                             modifier = Modifier.padding(end = 8.dp)
                         )
                         Text(
-                            text = winner?.playerName ?: "No winner",
+                            text = winner?.playerName ?: stringResource(R.string.history_no_winner),
                             style = MaterialTheme.typography.titleMedium,
                             fontWeight = FontWeight.Bold
                         )
@@ -185,7 +187,7 @@ private fun GameHistoryCard(
                         )
                     }
                     Text(
-                        text = "${game.participants.size} players",
+                        text = stringResource(R.string.history_players_count, game.participants.size),
                         style = MaterialTheme.typography.bodySmall,
                         color = MaterialTheme.colorScheme.onSurfaceVariant
                     )
@@ -193,13 +195,13 @@ private fun GameHistoryCard(
                 IconButton(onClick = onDeleteClick) {
                     Icon(
                         Icons.Default.Delete,
-                        contentDescription = "Delete game",
+                        contentDescription = stringResource(R.string.history_delete_game),
                         tint = MaterialTheme.colorScheme.error
                     )
                 }
                 Icon(
                     if (isExpanded) Icons.Default.ExpandLess else Icons.Default.ExpandMore,
-                    contentDescription = if (isExpanded) "Collapse" else "Expand"
+                    contentDescription = if (isExpanded) stringResource(R.string.history_collapse) else stringResource(R.string.history_expand)
                 )
             }
 
