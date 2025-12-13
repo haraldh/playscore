@@ -6,7 +6,12 @@
     <string name="players_history_button">История</string>
     <string name="players_add_player">Добавить игрока</string>
     <string name="players_select_to_start">Выберите игроков для начала</string>
-    <string name="players_start_game">Начать (%1$d игроков)</string>
+    <plurals name="players_start_game">
+        <item quantity="one">Начать (%1$d игрок)</item>
+        <item quantity="few">Начать (%1$d игрока)</item>
+        <item quantity="many">Начать (%1$d игроков)</item>
+        <item quantity="other">Начать (%1$d игрока)</item>
+    </plurals>
     <string name="players_empty_title">Нет игроков</string>
     <string name="players_empty_subtitle">Нажмите +, чтобы добавить игроков</string>
     <string name="players_delete">Удалить</string>
@@ -39,7 +44,12 @@
     <string name="results_view_history">Посмотреть историю</string>
     <string name="results_winner">Победитель!</string>
     <string name="results_winners">Победители!</string>
-    <string name="results_points">%1$d очков</string>
+    <plurals name="results_points">
+        <item quantity="one">%1$d очко</item>
+        <item quantity="few">%1$d очка</item>
+        <item quantity="many">%1$d очков</item>
+        <item quantity="other">%1$d очка</item>
+    </plurals>
     <string name="results_trophy">Трофей</string>
 
     <!-- History Screen -->
@@ -49,7 +59,12 @@
     <string name="history_empty_subtitle">Завершённые игры появятся здесь</string>
     <string name="history_unknown_date">Неизвестная дата</string>
     <string name="history_no_winner">Нет победителя</string>
-    <string name="history_players_count">%1$d игроков</string>
+    <plurals name="history_players_count">
+        <item quantity="one">%1$d игрок</item>
+        <item quantity="few">%1$d игрока</item>
+        <item quantity="many">%1$d игроков</item>
+        <item quantity="other">%1$d игрока</item>
+    </plurals>
     <string name="history_delete_game">Удалить игру</string>
     <string name="history_collapse">Свернуть</string>
     <string name="history_expand">Развернуть</string>

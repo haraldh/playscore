@@ -6,7 +6,10 @@
     <string name="players_history_button">History</string>
     <string name="players_add_player">Add player</string>
     <string name="players_select_to_start">Select players to start</string>
-    <string name="players_start_game">Start Game (%1$d players)</string>
+    <plurals name="players_start_game">
+        <item quantity="one">Start Game (%1$d player)</item>
+        <item quantity="other">Start Game (%1$d players)</item>
+    </plurals>
     <string name="players_empty_title">No players yet</string>
     <string name="players_empty_subtitle">Tap + to add players</string>
     <string name="players_delete">Delete</string>
@@ -39,7 +42,10 @@
     <string name="results_view_history">View History</string>
     <string name="results_winner">Winner!</string>
     <string name="results_winners">Winners!</string>
-    <string name="results_points">%1$d points</string>
+    <plurals name="results_points">
+        <item quantity="one">%1$d point</item>
+        <item quantity="other">%1$d points</item>
+    </plurals>
     <string name="results_trophy">Trophy</string>
 
     <!-- History Screen -->
@@ -49,7 +55,10 @@
     <string name="history_empty_subtitle">Completed games will appear here</string>
     <string name="history_unknown_date">Unknown date</string>
     <string name="history_no_winner">No winner</string>
-    <string name="history_players_count">%1$d players</string>
+    <plurals name="history_players_count">
+        <item quantity="one">%1$d player</item>
+        <item quantity="other">%1$d players</item>
+    </plurals>
     <string name="history_delete_game">Delete game</string>
     <string name="history_collapse">Collapse</string>
     <string name="history_expand">Expand</string>

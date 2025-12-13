@@ -34,6 +34,7 @@ import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.res.pluralStringResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
@@ -97,7 +98,7 @@ fun PlayersScreen(
                         text = if (uiState.selectedPlayerIds.isEmpty()) {
                             stringResource(R.string.players_select_to_start)
                         } else {
-                            stringResource(R.string.players_start_game, uiState.selectedPlayerIds.size)
+                            pluralStringResource(R.plurals.players_start_game, uiState.selectedPlayerIds.size, uiState.selectedPlayerIds.size)
                         }
                     )
                 }

@@ -6,7 +6,10 @@
     <string name="players_history_button">Historia</string>
     <string name="players_add_player">Lisää pelaaja</string>
     <string name="players_select_to_start">Valitse pelaajat aloittaaksesi</string>
-    <string name="players_start_game">Aloita (%1$d pelaajaa)</string>
+    <plurals name="players_start_game">
+        <item quantity="one">Aloita (%1$d pelaaja)</item>
+        <item quantity="other">Aloita (%1$d pelaajaa)</item>
+    </plurals>
     <string name="players_empty_title">Ei pelaajia</string>
     <string name="players_empty_subtitle">Lisää pelaajia napauttamalla +</string>
     <string name="players_delete">Poista</string>
@@ -39,7 +42,10 @@
     <string name="results_view_history">Näytä historia</string>
     <string name="results_winner">Voittaja!</string>
     <string name="results_winners">Voittajat!</string>
-    <string name="results_points">%1$d pistettä</string>
+    <plurals name="results_points">
+        <item quantity="one">%1$d piste</item>
+        <item quantity="other">%1$d pistettä</item>
+    </plurals>
     <string name="results_trophy">Palkinto</string>
 
     <!-- History Screen -->
@@ -49,7 +55,10 @@
     <string name="history_empty_subtitle">Valmiit pelit näkyvät täällä</string>
     <string name="history_unknown_date">Tuntematon päivämäärä</string>
     <string name="history_no_winner">Ei voittajaa</string>
-    <string name="history_players_count">%1$d pelaajaa</string>
+    <plurals name="history_players_count">
+        <item quantity="one">%1$d pelaaja</item>
+        <item quantity="other">%1$d pelaajaa</item>
+    </plurals>
     <string name="history_delete_game">Poista peli</string>
     <string name="history_collapse">Pienennä</string>
     <string name="history_expand">Laajenna</string>

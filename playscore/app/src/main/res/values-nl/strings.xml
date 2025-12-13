@@ -6,7 +6,10 @@
     <string name="players_history_button">Geschiedenis</string>
     <string name="players_add_player">Speler toevoegen</string>
     <string name="players_select_to_start">Selecteer spelers om te beginnen</string>
-    <string name="players_start_game">Starten (%1$d spelers)</string>
+    <plurals name="players_start_game">
+        <item quantity="one">Starten (%1$d speler)</item>
+        <item quantity="other">Starten (%1$d spelers)</item>
+    </plurals>
     <string name="players_empty_title">Geen spelers</string>
     <string name="players_empty_subtitle">Tik op + om spelers toe te voegen</string>
     <string name="players_delete">Verwijderen</string>
@@ -39,7 +42,10 @@
     <string name="results_view_history">Geschiedenis bekijken</string>
     <string name="results_winner">Winnaar!</string>
     <string name="results_winners">Winnaars!</string>
-    <string name="results_points">%1$d punten</string>
+    <plurals name="results_points">
+        <item quantity="one">%1$d punt</item>
+        <item quantity="other">%1$d punten</item>
+    </plurals>
     <string name="results_trophy">Trofee</string>
 
     <!-- History Screen -->
@@ -49,7 +55,10 @@
     <string name="history_empty_subtitle">Voltooide spellen verschijnen hier</string>
     <string name="history_unknown_date">Onbekende datum</string>
     <string name="history_no_winner">Geen winnaar</string>
-    <string name="history_players_count">%1$d spelers</string>
+    <plurals name="history_players_count">
+        <item quantity="one">%1$d speler</item>
+        <item quantity="other">%1$d spelers</item>
+    </plurals>
     <string name="history_delete_game">Spel verwijderen</string>
     <string name="history_collapse">Inklappen</string>
     <string name="history_expand">Uitklappen</string>

@@ -6,7 +6,12 @@
     <string name="players_history_button">Historie</string>
     <string name="players_add_player">Přidat hráče</string>
     <string name="players_select_to_start">Vyberte hráče pro zahájení</string>
-    <string name="players_start_game">Zahájit (%1$d hráčů)</string>
+    <plurals name="players_start_game">
+        <item quantity="one">Zahájit (%1$d hráč)</item>
+        <item quantity="few">Zahájit (%1$d hráči)</item>
+        <item quantity="many">Zahájit (%1$d hráče)</item>
+        <item quantity="other">Zahájit (%1$d hráčů)</item>
+    </plurals>
     <string name="players_empty_title">Žádní hráči</string>
     <string name="players_empty_subtitle">Klepnutím na + přidáte hráče</string>
     <string name="players_delete">Smazat</string>
@@ -39,7 +44,12 @@
     <string name="results_view_history">Zobrazit historii</string>
     <string name="results_winner">Vítěz!</string>
     <string name="results_winners">Vítězové!</string>
-    <string name="results_points">%1$d bodů</string>
+    <plurals name="results_points">
+        <item quantity="one">%1$d bod</item>
+        <item quantity="few">%1$d body</item>
+        <item quantity="many">%1$d bodu</item>
+        <item quantity="other">%1$d bodů</item>
+    </plurals>
     <string name="results_trophy">Trofej</string>
 
     <!-- History Screen -->
@@ -49,7 +59,12 @@
     <string name="history_empty_subtitle">Dokončené hry se zobrazí zde</string>
     <string name="history_unknown_date">Neznámé datum</string>
     <string name="history_no_winner">Žádný vítěz</string>
-    <string name="history_players_count">%1$d hráčů</string>
+    <plurals name="history_players_count">
+        <item quantity="one">%1$d hráč</item>
+        <item quantity="few">%1$d hráči</item>
+        <item quantity="many">%1$d hráče</item>
+        <item quantity="other">%1$d hráčů</item>
+    </plurals>
     <string name="history_delete_game">Smazat hru</string>
     <string name="history_collapse">Sbalit</string>
     <string name="history_expand">Rozbalit</string>

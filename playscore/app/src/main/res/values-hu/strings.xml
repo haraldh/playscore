@@ -6,7 +6,10 @@
     <string name="players_history_button">Előzmények</string>
     <string name="players_add_player">Játékos hozzáadása</string>
     <string name="players_select_to_start">Válassz játékosokat a kezdéshez</string>
-    <string name="players_start_game">Indítás (%1$d játékos)</string>
+    <plurals name="players_start_game">
+        <item quantity="one">Indítás (%1$d játékos)</item>
+        <item quantity="other">Indítás (%1$d játékos)</item>
+    </plurals>
     <string name="players_empty_title">Nincsenek játékosok</string>
     <string name="players_empty_subtitle">Érintsd meg a + jelet játékosok hozzáadásához</string>
     <string name="players_delete">Törlés</string>
@@ -39,7 +42,10 @@
     <string name="results_view_history">Előzmények megtekintése</string>
     <string name="results_winner">Győztes!</string>
     <string name="results_winners">Győztesek!</string>
-    <string name="results_points">%1$d pont</string>
+    <plurals name="results_points">
+        <item quantity="one">%1$d pont</item>
+        <item quantity="other">%1$d pont</item>
+    </plurals>
     <string name="results_trophy">Trófea</string>
 
     <!-- History Screen -->
@@ -49,7 +55,10 @@
     <string name="history_empty_subtitle">A befejezett játékok itt jelennek meg</string>
     <string name="history_unknown_date">Ismeretlen dátum</string>
     <string name="history_no_winner">Nincs győztes</string>
-    <string name="history_players_count">%1$d játékos</string>
+    <plurals name="history_players_count">
+        <item quantity="one">%1$d játékos</item>
+        <item quantity="other">%1$d játékos</item>
+    </plurals>
     <string name="history_delete_game">Játék törlése</string>
     <string name="history_collapse">Összecsukás</string>
     <string name="history_expand">Kibontás</string>

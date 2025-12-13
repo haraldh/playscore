@@ -6,7 +6,10 @@
     <string name="players_history_button">Cronologia</string>
     <string name="players_add_player">Aggiungi giocatore</string>
     <string name="players_select_to_start">Seleziona i giocatori per iniziare</string>
-    <string name="players_start_game">Inizia (%1$d giocatori)</string>
+    <plurals name="players_start_game">
+        <item quantity="one">Inizia (%1$d giocatore)</item>
+        <item quantity="other">Inizia (%1$d giocatori)</item>
+    </plurals>
     <string name="players_empty_title">Nessun giocatore</string>
     <string name="players_empty_subtitle">Tocca + per aggiungere giocatori</string>
     <string name="players_delete">Elimina</string>
@@ -39,7 +42,10 @@
     <string name="results_view_history">Vedi cronologia</string>
     <string name="results_winner">Vincitore!</string>
     <string name="results_winners">Vincitori!</string>
-    <string name="results_points">%1$d punti</string>
+    <plurals name="results_points">
+        <item quantity="one">%1$d punto</item>
+        <item quantity="other">%1$d punti</item>
+    </plurals>
     <string name="results_trophy">Trofeo</string>
 
     <!-- History Screen -->
@@ -49,7 +55,10 @@
     <string name="history_empty_subtitle">Le partite completate appariranno qui</string>
     <string name="history_unknown_date">Data sconosciuta</string>
     <string name="history_no_winner">Nessun vincitore</string>
-    <string name="history_players_count">%1$d giocatori</string>
+    <plurals name="history_players_count">
+        <item quantity="one">%1$d giocatore</item>
+        <item quantity="other">%1$d giocatori</item>
+    </plurals>
     <string name="history_delete_game">Elimina partita</string>
     <string name="history_collapse">Comprimi</string>
     <string name="history_expand">Espandi</string>

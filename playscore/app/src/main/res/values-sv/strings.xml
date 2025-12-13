@@ -6,7 +6,10 @@
     <string name="players_history_button">Historik</string>
     <string name="players_add_player">Lägg till spelare</string>
     <string name="players_select_to_start">Välj spelare för att börja</string>
-    <string name="players_start_game">Starta (%1$d spelare)</string>
+    <plurals name="players_start_game">
+        <item quantity="one">Starta (%1$d spelare)</item>
+        <item quantity="other">Starta (%1$d spelare)</item>
+    </plurals>
     <string name="players_empty_title">Inga spelare</string>
     <string name="players_empty_subtitle">Tryck på + för att lägga till spelare</string>
     <string name="players_delete">Ta bort</string>
@@ -39,7 +42,10 @@
     <string name="results_view_history">Visa historik</string>
     <string name="results_winner">Vinnare!</string>
     <string name="results_winners">Vinnare!</string>
-    <string name="results_points">%1$d poäng</string>
+    <plurals name="results_points">
+        <item quantity="one">%1$d poäng</item>
+        <item quantity="other">%1$d poäng</item>
+    </plurals>
     <string name="results_trophy">Trofé</string>
 
     <!-- History Screen -->
@@ -49,7 +55,10 @@
     <string name="history_empty_subtitle">Avslutade spel visas här</string>
     <string name="history_unknown_date">Okänt datum</string>
     <string name="history_no_winner">Ingen vinnare</string>
-    <string name="history_players_count">%1$d spelare</string>
+    <plurals name="history_players_count">
+        <item quantity="one">%1$d spelare</item>
+        <item quantity="other">%1$d spelare</item>
+    </plurals>
     <string name="history_delete_game">Ta bort spel</string>
     <string name="history_collapse">Minimera</string>
     <string name="history_expand">Expandera</string>

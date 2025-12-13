@@ -6,7 +6,12 @@
     <string name="players_history_button">Історія</string>
     <string name="players_add_player">Додати гравця</string>
     <string name="players_select_to_start">Виберіть гравців для початку</string>
-    <string name="players_start_game">Почати (%1$d гравців)</string>
+    <plurals name="players_start_game">
+        <item quantity="one">Почати (%1$d гравець)</item>
+        <item quantity="few">Почати (%1$d гравці)</item>
+        <item quantity="many">Почати (%1$d гравців)</item>
+        <item quantity="other">Почати (%1$d гравця)</item>
+    </plurals>
     <string name="players_empty_title">Немає гравців</string>
     <string name="players_empty_subtitle">Натисніть +, щоб додати гравців</string>
     <string name="players_delete">Видалити</string>
@@ -39,7 +44,12 @@
     <string name="results_view_history">Переглянути історію</string>
     <string name="results_winner">Переможець!</string>
     <string name="results_winners">Переможці!</string>
-    <string name="results_points">%1$d очок</string>
+    <plurals name="results_points">
+        <item quantity="one">%1$d очко</item>
+        <item quantity="few">%1$d очки</item>
+        <item quantity="many">%1$d очок</item>
+        <item quantity="other">%1$d очка</item>
+    </plurals>
     <string name="results_trophy">Трофей</string>
 
     <!-- History Screen -->
@@ -49,7 +59,12 @@
     <string name="history_empty_subtitle">Завершені ігри з\'являться тут</string>
     <string name="history_unknown_date">Невідома дата</string>
     <string name="history_no_winner">Немає переможця</string>
-    <string name="history_players_count">%1$d гравців</string>
+    <plurals name="history_players_count">
+        <item quantity="one">%1$d гравець</item>
+        <item quantity="few">%1$d гравці</item>
+        <item quantity="many">%1$d гравців</item>
+        <item quantity="other">%1$d гравця</item>
+    </plurals>
     <string name="history_delete_game">Видалити гру</string>
     <string name="history_collapse">Згорнути</string>
     <string name="history_expand">Розгорнути</string>

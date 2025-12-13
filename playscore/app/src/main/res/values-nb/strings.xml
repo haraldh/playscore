@@ -6,7 +6,10 @@
     <string name="players_history_button">Historikk</string>
     <string name="players_add_player">Legg til spiller</string>
     <string name="players_select_to_start">Velg spillere for å starte</string>
-    <string name="players_start_game">Start (%1$d spillere)</string>
+    <plurals name="players_start_game">
+        <item quantity="one">Start (%1$d spiller)</item>
+        <item quantity="other">Start (%1$d spillere)</item>
+    </plurals>
     <string name="players_empty_title">Ingen spillere</string>
     <string name="players_empty_subtitle">Trykk på + for å legge til spillere</string>
     <string name="players_delete">Slett</string>
@@ -39,7 +42,10 @@
     <string name="results_view_history">Se historikk</string>
     <string name="results_winner">Vinner!</string>
     <string name="results_winners">Vinnere!</string>
-    <string name="results_points">%1$d poeng</string>
+    <plurals name="results_points">
+        <item quantity="one">%1$d poeng</item>
+        <item quantity="other">%1$d poeng</item>
+    </plurals>
     <string name="results_trophy">Trofé</string>
 
     <!-- History Screen -->
@@ -49,7 +55,10 @@
     <string name="history_empty_subtitle">Fullførte spill vises her</string>
     <string name="history_unknown_date">Ukjent dato</string>
     <string name="history_no_winner">Ingen vinner</string>
-    <string name="history_players_count">%1$d spillere</string>
+    <plurals name="history_players_count">
+        <item quantity="one">%1$d spiller</item>
+        <item quantity="other">%1$d spillere</item>
+    </plurals>
     <string name="history_delete_game">Slett spill</string>
     <string name="history_collapse">Skjul</string>
     <string name="history_expand">Utvid</string>

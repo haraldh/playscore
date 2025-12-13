@@ -6,7 +6,11 @@
     <string name="players_history_button">Istoric</string>
     <string name="players_add_player">Adaugă jucător</string>
     <string name="players_select_to_start">Selectează jucătorii pentru a începe</string>
-    <string name="players_start_game">Începe (%1$d jucători)</string>
+    <plurals name="players_start_game">
+        <item quantity="one">Începe (%1$d jucător)</item>
+        <item quantity="few">Începe (%1$d jucători)</item>
+        <item quantity="other">Începe (%1$d de jucători)</item>
+    </plurals>
     <string name="players_empty_title">Niciun jucător</string>
     <string name="players_empty_subtitle">Apasă + pentru a adăuga jucători</string>
     <string name="players_delete">Șterge</string>
@@ -39,7 +43,11 @@
     <string name="results_view_history">Vezi istoricul</string>
     <string name="results_winner">Câștigător!</string>
     <string name="results_winners">Câștigători!</string>
-    <string name="results_points">%1$d puncte</string>
+    <plurals name="results_points">
+        <item quantity="one">%1$d punct</item>
+        <item quantity="few">%1$d puncte</item>
+        <item quantity="other">%1$d de puncte</item>
+    </plurals>
     <string name="results_trophy">Trofeu</string>
 
     <!-- History Screen -->
@@ -49,7 +57,11 @@
     <string name="history_empty_subtitle">Jocurile finalizate vor apărea aici</string>
     <string name="history_unknown_date">Dată necunoscută</string>
     <string name="history_no_winner">Niciun câștigător</string>
-    <string name="history_players_count">%1$d jucători</string>
+    <plurals name="history_players_count">
+        <item quantity="one">%1$d jucător</item>
+        <item quantity="few">%1$d jucători</item>
+        <item quantity="other">%1$d de jucători</item>
+    </plurals>
     <string name="history_delete_game">Șterge jocul</string>
     <string name="history_collapse">Restrânge</string>
     <string name="history_expand">Extinde</string>

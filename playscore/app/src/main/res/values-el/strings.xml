@@ -6,7 +6,10 @@
     <string name="players_history_button">Ιστορικό</string>
     <string name="players_add_player">Προσθήκη παίκτη</string>
     <string name="players_select_to_start">Επιλέξτε παίκτες για να ξεκινήσετε</string>
-    <string name="players_start_game">Έναρξη (%1$d παίκτες)</string>
+    <plurals name="players_start_game">
+        <item quantity="one">Έναρξη (%1$d παίκτης)</item>
+        <item quantity="other">Έναρξη (%1$d παίκτες)</item>
+    </plurals>
     <string name="players_empty_title">Δεν υπάρχουν παίκτες</string>
     <string name="players_empty_subtitle">Πατήστε + για να προσθέσετε παίκτες</string>
     <string name="players_delete">Διαγραφή</string>
@@ -39,7 +42,10 @@
     <string name="results_view_history">Προβολή ιστορικού</string>
     <string name="results_winner">Νικητής!</string>
     <string name="results_winners">Νικητές!</string>
-    <string name="results_points">%1$d πόντοι</string>
+    <plurals name="results_points">
+        <item quantity="one">%1$d πόντος</item>
+        <item quantity="other">%1$d πόντοι</item>
+    </plurals>
     <string name="results_trophy">Τρόπαιο</string>
 
     <!-- History Screen -->
@@ -49,7 +55,10 @@
     <string name="history_empty_subtitle">Τα ολοκληρωμένα παιχνίδια θα εμφανιστούν εδώ</string>
     <string name="history_unknown_date">Άγνωστη ημερομηνία</string>
     <string name="history_no_winner">Κανένας νικητής</string>
-    <string name="history_players_count">%1$d παίκτες</string>
+    <plurals name="history_players_count">
+        <item quantity="one">%1$d παίκτης</item>
+        <item quantity="other">%1$d παίκτες</item>
+    </plurals>
     <string name="history_delete_game">Διαγραφή παιχνιδιού</string>
     <string name="history_collapse">Σύμπτυξη</string>
     <string name="history_expand">Ανάπτυξη</string>
