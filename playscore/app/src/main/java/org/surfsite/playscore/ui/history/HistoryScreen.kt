@@ -33,8 +33,10 @@ import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.pluralStringResource
 import androidx.compose.ui.res.stringResource
@@ -48,7 +50,6 @@ import org.surfsite.playscore.ui.components.ConfirmationDialog
 import org.surfsite.playscore.ui.theme.WinnerGold
 import java.text.SimpleDateFormat
 import java.util.Date
-import java.util.Locale
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -147,7 +148,8 @@ private fun GameHistoryCard(
 ) {
     val sortedParticipants = game.participants.sortedByDescending { it.score }
     val winner = sortedParticipants.firstOrNull()
-    val dateFormat = SimpleDateFormat("MMM d, yyyy 'at' h:mm a", Locale.getDefault())
+    val locale = LocalConfiguration.current.locales[0]
+    val dateFormat = remember(locale) { SimpleDateFormat("MMM d, yyyy 'at' h:mm a", locale) }
 
     Card(
         onClick = onToggleExpanded,
