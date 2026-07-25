@@ -33,6 +33,7 @@ import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalConfiguration
@@ -148,7 +149,7 @@ private fun GameHistoryCard(
     val sortedParticipants = game.participants.sortedByDescending { it.score }
     val winner = sortedParticipants.firstOrNull()
     val locale = LocalConfiguration.current.locales[0]
-    val dateFormat = SimpleDateFormat("MMM d, yyyy 'at' h:mm a", locale)
+    val dateFormat = remember(locale) { SimpleDateFormat("MMM d, yyyy 'at' h:mm a", locale) }
 
     Card(
         onClick = onToggleExpanded,
