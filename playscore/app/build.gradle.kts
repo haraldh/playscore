@@ -12,7 +12,7 @@ val versionPatch = 1 // x-release-please-patch
 
 android {
     namespace = "org.surfsite.playscore"
-    compileSdk = 36
+    compileSdk = 37
 
     defaultConfig {
         applicationId = "org.surfsite.playscore"
