@@ -8,7 +8,7 @@ plugins {
 // versionCode = MAJOR * 10000 + MINOR * 100 + PATCH (e.g., 1.2.0 -> 10200)
 val versionMajor = 1 // x-release-please-major
 val versionMinor = 2 // x-release-please-minor
-val versionPatch = 1 // x-release-please-patch
+val versionPatch = 2 // x-release-please-patch
 
 android {
     namespace = "org.surfsite.playscore"

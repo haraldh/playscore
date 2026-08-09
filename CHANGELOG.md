@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.2](https://github.com/haraldh/playscore/compare/v1.2.1...v1.2.2) (2026-07-25)
+
+
+### Bug Fixes
+
+* **history:** read locale observably to unblock Compose upgrade ([#87](https://github.com/haraldh/playscore/issues/87)) ([a452ec7](https://github.com/haraldh/playscore/commit/a452ec76c288be5cdc8f0627bc449fdd5f422c23))
+
 ## [1.2.1](https://github.com/haraldh/playscore/compare/v1.2.0...v1.2.1) (2025-12-13)
 
 
